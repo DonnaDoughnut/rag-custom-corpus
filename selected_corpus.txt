@@ -1,0 +1,62 @@
+# ============================================================
+# This file records 10 papers selected for the custom corpus.
+#
+# Each entry contains:
+#    - the paper index in the original dataset
+#    - a brief topic description manually summarized from the
+#      the paper's abstract
+#
+# The original dataset does not provide paper titles, so the
+# topic descriptions are added manually to identify the selected
+# papers and provide a quick overview of the custom corpus.
+# ============================================================
+
+
+------------------------------------------------------------------------------
+*** Using keywords such as 'sleep disorder', found following 8 papers:
+
+
+--- 1. Paper 503 ---
+Factors associated with fatigue in sleep-disordered patients, especially sleep
+fragmentation, age, and sex.
+
+--- 2. Paper 942 --- 
+Sleep clinic patients' experiences with and willingness to use telemedicine,
+especially video-based care.
+
+--- 3. Paper 1395 --- 
+Effects of experimentally induced hyperthyroidism on sleep architecture and
+physiological changes in healthy adults.
+
+--- 4. Paper 3325 --- 
+Sleep quality and major sleep-disturbing factors among hospitalized older adults.
+
+--- 5. Paper 3823 --- 
+Relationships among state anxiety, thermal comfort, eye fatigue, and sleep 
+quality in shift-work nurses.
+
+--- 6. Paper 4060 --- 
+Association between dysfunctional sleep-related beliefs and anxiety or mood
+disorders in older adults.
+
+--- 7. Paper 4070 --- 
+Association of sleep-disordered breathing symptoms with insulin resistance,
+glucose metabolism, and type 2 diabetes risk in older adults.
+
+--- 8. Paper 4911 --- 
+How sleep supports hippocampal memory encoding, consolidation, and selective
+forgetting.
+
+
+
+------------------------------------------------------------------------------
+*** Using keywords such as 'physical exercise', found following 2 papers:
+
+
+--- 9. Paper 1625 ---
+Role of physical activity and non-exercise activity thermogenesis (NEAT) in
+energy expenditure, body weight, and fat regulation.
+
+--- 10. Paper 1822 --- 
+Independent association between energy intake and intra-abdominal fat 
+accumulation in midlife women.
