@@ -1,5 +1,6 @@
-# Developed based on https://community.databricks.com/t5/technical-blog/the-ultimate-guide-to-chunking-strategies-for-rag-applications/ba-p/113089
 # Referenced https://huggingface.co/docs/transformers/v5.14.0/en/main_classes/tokenizer
+
+import math
 
 gen_AI_model = ""  # The name of the model used for the answer generation stage. Defaults if left blank.
 
@@ -75,9 +76,54 @@ def fixed_size_sentence(document, num_sentences=1, overlap=0):
     chunks.append(" ".join(sentences[i:i + num_sentences]))
   return chunks
 
+"""Not using since paragraph breaks from the original paper don't always make it into the downloaded papers"""
+# Inspired by https://community.databricks.com/t5/technical-blog/the-ultimate-guide-to-chunking-strategies-for-rag-applications/ba-p/113089
+# Makes each paragaph a chunk, except for paragraphs below min_chunk_size which it combines together, and above max_chunk_size which it splits up
+# delimiter is the characters that indicate the end of a paragraph. min_chunk_size is in characters. Overlap is the percent overlap that should be used
+# when paragraphs that are too large are split.
+# From a brief look at the data, the average word (separated by spaces) length is 6 to 6.5 characters. For limiting paragraphs to 128 to 384 tokens,
+# I will use 750 for min characters and 1500 for max characters
 
-# def fixed_size_paragraph(document, num_paragraphs, overlap):
+# def split_paragraphs(document, delimiter="\n\n", min_chunk_size=750, max_chunk_size=1500, overlap_percent=0.15):
+#   paragraphs = document.split(delimiter)
+#   chunks = []
+#   current_chunk = ""
+#   for para in paragraphs:
+#     if not para.strip():
+#       continue
+#     current_chunk += para
+#     print("len of current chunk:", len(current_chunk))
+#     if len(current_chunk) > max_chunk_size:
+#       size_without_overlap = max_chunk_size / (1 + overlap_percent)
+#       print("target size of new chunks in characters is", size_without_overlap)
+#       num_chunks_to_make = math.ceil(len(current_chunk) / size_without_overlap)
+#       print("num_chunks_to_make is", num_chunks_to_make)
+#       len_of_each_chunk = len(current_chunk) / num_chunks_to_make
+#       words_without_overlap = round(len_of_each_chunk / 6)  # Assuming that 6 is the average word length
+#       print("words_without_overlap is", words_without_overlap)
+#       overlap = round(words_without_overlap * overlap_percent)
+#       print("number of words of overlap is", overlap)
+#       current_chunk_words = current_chunk.split()
+#       for i in range(0, len(current_chunk_words), words_without_overlap):
+#         if i + words_without_overlap + overlap > len(current_chunk_words):
+#           chunks.append(current_chunk_words[i:])
+#           print("Added to chunks:", current_chunk_words[i:])
+#         else:
+#           chunks.append(current_chunk_words[i : i + words_without_overlap + overlap])
+#           print("Added to chunks:", current_chunk_words[i : i + words_without_overlap + overlap])
+#       current_chunk = ""
+#     elif len(current_chunk) >= min_chunk_size:
+#       print("Current chunk was not bigger than max_chunk_size. Adding to chunks and resetting current_chunk.")
+#       chunks.append(current_chunk)
+#       current_chunk = ""
+#   if len(current_chunk) < min_chunk_size:
+#     chunks.append(current_chunk)
+#   return chunks
+
+
 """Semantic Chunking"""
+
+
 
 # Returns overlap if valid, otherwise returns 15%
 def validate_parameters(document, size, overlap, percentage):
@@ -100,23 +146,29 @@ article1 = article_fulltexts[0]
 
 # Test chunk sizes from 125 to 250 to 500
 # Using an overlap greater than 15% since academic text requires more overlap in general
-
 chunks = fixed_size_token(article1, 125, 0.2)
 print("Fixed Number of Tokens")
 for chunk in chunks[0:7]:
   print(chunk + "\n")
+print()
 
 # I'd test performance with 0.21-0.25 too, as it seems to be missing the beginnings of sentences
-
 chunks = recursive(article1, 125, 0.2)
 print("Recursive Splitting")
 for chunk in chunks[0:7]:
   print(chunk + "\n")
+print()
 
 chunks = fixed_size_sentence(article1, 2, 1)
 print("Fixed Number of Sentences")
 for chunk in chunks[0:7]:
   print(chunk + "\n")
+print()
+
+# chunks = split_paragraphs(article1, "\n")
+# print("Split by Paragraph")
+# for chunk in chunks[0:10]:
+#   print(chunk + "\n")
 
 
 """Notes"""
