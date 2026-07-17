@@ -121,10 +121,18 @@ def fixed_size_sentence(document, num_sentences=1, overlap=0):
 #   return chunks
 
 
-"""Semantic Chunking"""
+"""Semantic Chunking
+Calculates the embedding vector for each sentences, calculates cosine similarities and starts a new chunk whenever the similarity is too low"""
+from langchain_experimental.text_splitter import SemanticChunker
+from langchain_huggingface import HuggingFaceEmbeddings
+
+def semantic(document, target_num_chunks=60):
+  embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
+  text_splitter = SemanticChunker(embeddings, number_of_chunks=target_num_chunks)
+  return text_splitter.split_text(document)
 
 
-
+"""Helper functions"""
 # Returns overlap if valid, otherwise returns 15%
 def validate_parameters(document, size, overlap, percentage):
   if not isinstance(document, str) or len(document) == 0:
@@ -140,35 +148,69 @@ def validate_parameters(document, size, overlap, percentage):
       raise ValueError("Overlap must be less than num_sentences.")
   return overlap
 
+import statistics
+# Returns a dictionary with keys "num_chunks", "mean_token_count", "median_token_count", "min_token_count", "max_token_count", and "stdev"
+def compute_chunk_stats(chunks):
+  if gen_AI_model:  # Possibilities include "meta-llama/Llama-2-7b-chat-hf", "google/gemma-2-2b", a bert or gpt2 tokenizer, etc.
+    tokenizer = AutoTokenizer.from_pretrained(gen_AI_model)
+  else:
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    tokenizer.model_max_length = int(1e30)  # Used to suppress a warning that isn't necessary for the tokenization stage
+
+  results = {"num_chunks": len(chunks)}
+  chunk_sizes = [len(tokenizer.encode(chunk, add_special_tokens=False)) for chunk in chunks]
+  results["mean_token_count"] = sum(chunk_sizes) / len(chunks)
+  results["median_token_count"] = statistics.median(chunk_sizes)
+  results["min_token_count"] = min(chunk_sizes)
+  results["max_token_count"] = max(chunk_sizes)
+  results["stdev"] = statistics.stdev(chunk_sizes)
+  return results
+
+
 """Testing"""
-article1 = article_fulltexts[0]
+show_sample_chunks = False
+article1 = article_fulltexts[1]
 # print(article1["article"][0:1000] + "\n")  # Head of first paper
 
 # Test chunk sizes from 125 to 250 to 500
 # Using an overlap greater than 15% since academic text requires more overlap in general
-chunks = fixed_size_token(article1, 125, 0.2)
+chunks = fixed_size_token(article1, 125, 0.25)
 print("Fixed Number of Tokens")
-for chunk in chunks[0:7]:
-  print(chunk + "\n")
+if show_sample_chunks:
+  for chunk in chunks[0:7]:
+    print(chunk + "\n")
+  print()
+print(compute_chunk_stats(chunks))
 print()
+num_chunks_estimate = compute_chunk_stats(chunks)["num_chunks"]
 
-# I'd test performance with 0.21-0.25 too, as it seems to be missing the beginnings of sentences
-chunks = recursive(article1, 125, 0.2)
+chunks = recursive(article1, 125, 0.25)
 print("Recursive Splitting")
-for chunk in chunks[0:7]:
-  print(chunk + "\n")
+if show_sample_chunks:
+  for chunk in chunks[0:7]:
+    print(chunk + "\n")
+  print()
+print(compute_chunk_stats(chunks))
 print()
 
-chunks = fixed_size_sentence(article1, 2, 1)
+# Test with 2 and 3
+chunks = fixed_size_sentence(article1, 2)
 print("Fixed Number of Sentences")
-for chunk in chunks[0:7]:
-  print(chunk + "\n")
+if show_sample_chunks:
+  for chunk in chunks[0:7]:
+    print(chunk + "\n")
+  print()
+print(compute_chunk_stats(chunks))
 print()
 
-# chunks = split_paragraphs(article1, "\n")
-# print("Split by Paragraph")
-# for chunk in chunks[0:10]:
-#   print(chunk + "\n")
+chunks = semantic(article1, num_chunks_estimate)
+print("Semantic/Embeddings-based Chunking")
+if show_sample_chunks:
+  for chunk in chunks[0:7]:
+    print(chunk + "\n")
+  print()
+print(compute_chunk_stats(chunks))
+print()
 
 
 """Notes"""
@@ -177,3 +219,6 @@ print()
 # Fixed token chunking produces uniform chunks with exact overlap. Recursive chunking uses the same target values but allows chunk sizes and overlap
 # to vary in order to split at natural boundaries. The question we are interested in is, does preserving document structure improve retrieval enough
 # to outweigh the less regular chunking?
+# The semantic chunker was controlled for number of chunks produced, as the default settings could result in way larger chunks than all the other methods.
+# Article one can be found here: https://www.tandfonline.com/doi/full/10.2147/NDT.S50763#d1e104
+# Article two can be found here: https://pmc.ncbi.nlm.nih.gov/articles/PMC3400365/
