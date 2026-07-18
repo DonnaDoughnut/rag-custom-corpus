@@ -1,0 +1,3 @@
+datasets==3.6.0           # Used by all files
+langchain-text-splitters  # Used by 03_chunking.py
+transformers              # Used by 03_chunking.py
