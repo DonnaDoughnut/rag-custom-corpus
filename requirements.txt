@@ -1,3 +1,8 @@
 datasets==3.6.0           # Used by all files
 langchain-text-splitters  # Used by 03_chunking.py
 transformers              # Used by 03_chunking.py
+nltk                      # Used by 03_chunking.py
+langchain_experimental    # Used by 03_chunking.py
+langchain_huggingface     # Used by 03_chunking.py
+sentence-transformers     # Used by 03_chunking.py
+openai                    # Used by 04_embedding.py
