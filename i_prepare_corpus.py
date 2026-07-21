@@ -125,6 +125,8 @@ print(f"Matching indices: {matching_indices[:20]}")
 #    Uncomment the print statement and replace the example
 #    index as needed.
 #
+#    For our convenience, we can paste the matching indices here
+#    below and delete the one that has passed:
 #    Matching indices: <paste here>
 # ------------------------------------------------------------
 
