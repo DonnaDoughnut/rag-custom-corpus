@@ -6,3 +6,4 @@ langchain_experimental    # Used by 03_chunking.py
 langchain_huggingface     # Used by 03_chunking.py
 sentence-transformers     # Used by 03_chunking.py
 openai                    # Used by 04_embedding.py
+rank-bm25                 # Used by 04_bm25_indexing.py

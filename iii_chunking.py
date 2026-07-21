@@ -168,49 +168,50 @@ def compute_chunk_stats(chunks):
 
 
 """Testing"""
-show_sample_chunks = False
-article1 = article_fulltexts[1]
-# print(article1["article"][0:1000] + "\n")  # Head of first paper
+if __name__ == "__main__":
+  show_sample_chunks = False
+  article1 = article_fulltexts[1]
+  # print(article1["article"][0:1000] + "\n")  # Head of first paper
 
-# Test chunk sizes from 125 to 250 to 500
-# Using an overlap greater than 15% since academic text requires more overlap in general
-chunks = fixed_size_token(article1, 125, 0.25)
-print("Fixed Number of Tokens")
-if show_sample_chunks:
-  for chunk in chunks[0:7]:
-    print(chunk + "\n")
+  # Test chunk sizes from 125 to 250 to 500
+  # Using an overlap greater than 15% since academic text requires more overlap in general
+  chunks = fixed_size_token(article1, 125, 0.25)
+  print("Fixed Number of Tokens")
+  if show_sample_chunks:
+    for chunk in chunks[0:7]:
+      print(chunk + "\n")
+    print()
+  print(compute_chunk_stats(chunks))
   print()
-print(compute_chunk_stats(chunks))
-print()
-num_chunks_estimate = compute_chunk_stats(chunks)["num_chunks"]
+  num_chunks_estimate = compute_chunk_stats(chunks)["num_chunks"]
 
-chunks = recursive(article1, 125, 0.25)
-print("Recursive Splitting")
-if show_sample_chunks:
-  for chunk in chunks[0:7]:
-    print(chunk + "\n")
+  chunks = recursive(article1, 125, 0.25)
+  print("Recursive Splitting")
+  if show_sample_chunks:
+    for chunk in chunks[0:7]:
+      print(chunk + "\n")
+    print()
+  print(compute_chunk_stats(chunks))
   print()
-print(compute_chunk_stats(chunks))
-print()
 
-# Test with 2 and 3
-chunks = fixed_size_sentence(article1, 2)
-print("Fixed Number of Sentences")
-if show_sample_chunks:
-  for chunk in chunks[0:7]:
-    print(chunk + "\n")
+  # Test with 2 and 3
+  chunks = fixed_size_sentence(article1, 2)
+  print("Fixed Number of Sentences")
+  if show_sample_chunks:
+    for chunk in chunks[0:7]:
+      print(chunk + "\n")
+    print()
+  print(compute_chunk_stats(chunks))
   print()
-print(compute_chunk_stats(chunks))
-print()
 
-chunks = semantic(article1, num_chunks_estimate)
-print("Semantic/Embeddings-based Chunking")
-if show_sample_chunks:
-  for chunk in chunks[0:7]:
-    print(chunk + "\n")
+  chunks = semantic(article1, num_chunks_estimate)
+  print("Semantic/Embeddings-based Chunking")
+  if show_sample_chunks:
+    for chunk in chunks[0:7]:
+      print(chunk + "\n")
+    print()
+  print(compute_chunk_stats(chunks))
   print()
-print(compute_chunk_stats(chunks))
-print()
 
 
 """Notes"""
