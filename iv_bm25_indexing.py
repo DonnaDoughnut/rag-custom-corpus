@@ -1,199 +1,100 @@
 ###########################################################################
 # Name: iv_bm25_indexing.py
 # 
-# This file builds BM25 indexes for the custom corpus using the widely used
-# Python library `rank_bm25`.
-#
-# Four chunking functions are imported from `iii_chunking.py` and applied
-# to the entire custom corpus to generate four separate chunk collections:
-#   - fixed_token_chunks
-#   - recursive_chunks
-#   - sentence_chunks
-#   - semantic_chunks
+# This file builds four BM25 indexes using the chunk collections previously
+# generated and stored in `chunk_collections.pkl`:
+#   - fixed_token 
+#   - recursive
+#   - sentence
+#   - semantic
 #
 # Before indexing, each chunk is tokenized during preprocessing since 
 # `BM25Okapi` requires the corpus to be provided as a list of token lists. 
 # A separate BM25 index is then constructed for each chunk collection.
 #
-# During index construction, BM25 calculates corpus-level statistics 
-# such as term frequency, inverse document frequency, and chunk-length 
-# normalization to support later retrieval.
+# The indexes, original chunk records, and tokenized chunks are stored
+# together in `bm25_indexes.pkl` for later BM25 retrieval.
 ##########################################################################
 
 
-from datasets import load_from_disk
 from rank_bm25 import BM25Okapi
 import re
 import pickle
 
-from iii_chunking import (
-    fixed_size_token,
-    recursive,
-    fixed_size_sentence,
-    semantic
+
+# ======================================================================
+# SETTING. DEFINE THE EXPECTED CHUNKING METHODS
+#
+# Defines the four chunking methods that should be included in both
+# `chunk_collections.pkl` and later generated `bm25_index.pkl`. 
+# 
+# The list is used later to verify that all expected methods are present.
+# ======================================================================
+
+expected_methods = [
+    "fixed_token",
+    "recursive",
+    "sentence",
+    "semantic"
+]
+
+
+# ======================================================================
+# STEP 1. LOAD THE SAVED CHUNK COLLECTIONS
+# 
+# Loads the four previously generated chunk collections from 
+# `chunk_collections.pkl`.
+# 
+# Each collection contains chunk records with the chunk text and metadata,
+# including its source document, original paper ID, chunk ID, and method.
+# ======================================================================
+
+with open("chunk_collections.pkl", "rb") as file:
+    chunk_collections = pickle.load(file)
+
+
+# ======================================================================
+# STEP 2. VALIDATE THE LOADED CHUNK COLLECTIONS
+# 
+# Confirms that all four expected chunk collections exist and that
+# every collection contains chunk records with the required fields.
+#
+# No output is expected from the assertion. If a validation fails,
+# an `AssertionError` is raised and the program stops immmediately.
+# ======================================================================
+
+assert set(chunk_collections.keys()) == set(expected_methods), (
+    "Error: The saved chunk_collection.pkl does not contain the expected "
+    "four chunk collections."
 )
 
+required_fields = {
+    "text",
+    "document_id",
+    "paper_id",
+    "chunk_id",
+    "method"
+}
 
-# ======================================================================
-# STEP 1. LOAD THE CUSTOM CORPUS
-# 
-# Loads and extracts the 10 selected papers' full article texts.
-# ======================================================================
+for method in expected_methods:
+    chunk_collection = chunk_collections[method]
 
-custom_corpus = load_from_disk("custom_corpus")
+    assert len(chunk_collection) > 0, (
+        f"Error: The {method} chunk collection is empty."
+    )
 
-documents = [paper["article"] for paper in custom_corpus]
-
-
-# ======================================================================
-# STEP 2. APPLY A CHUNKING METHOD TO ALL DOCUMENTS
-# 
-# Applies one selected chunking function to every document in the corpus.
-# This helper function is used for fixed-token, recursive, and 
-# sentence chunking that accept size and overlap parameters.
-#
-# Parameters:
-#   documents: 
-#       A list of full article texts.
-#
-#   chunking_function: 
-#       One of the chunking functions imported from `iii_chunking.py`.
-#
-#   method_name: 
-#       The name of the selected chunking method.
-#
-#   size: 
-#       The chunk-size argument passed to the chunking function.
-#       It represents either tokens or sentences, depending on the method.
-#
-#   overlap: 
-#       The overlap argument passed to the chunking function.
-#
-# Returns:
-#   A list of chunk records that contains the chunk text and metadata
-#   that identifies its source document, chunk, and method.
-# ======================================================================
-
-def create_chunk_records(documents, chunking_function, method_name, size, overlap):
-
-    chunk_records = []
-
-    # Process each document using the selected chunking function.
-    for document_id, document in enumerate(documents):
-        document_chunks = chunking_function(document, size, overlap)
-
-        # Store each chunk together with its document and chunk metadata.
-        for chunk_id, chunk_text in enumerate(document_chunks):
-            chunk_records.append({
-                "text": chunk_text,
-                "document_id": document_id,
-                "chunk_id": chunk_id,
-                "method": method_name
-            })
-
-    return chunk_records
-
-
-# ======================================================================
-# STEP 3. APPLY SEMANTIC CHUNKING TO ALL DOCUMENTS
-#
-# Applies semantic chunking separately to every document in the corpus 
-# since it uses `target_num_chunks` instead of chunk size and overlap.
-# 
-# For future comparison purposes, each document is divided into 
-# approximately the same number of semantic chunks as the fixed-token 
-# method produced for that document.
-#
-# Parameters:
-#   documents:
-#       A list of full article texts.
-#
-#   reference_chunks:
-#       Chunk records generated by the fixed-token method.
-#
-# Returns:
-#   A list of semantic chunk records with source metadata.
-# ======================================================================
-
-def create_semantic_chunk_records(documents, reference_chunks):
-
-    semantic_chunk_records = []
-
-    for document_id, document in enumerate(documents):
-
-        # Uses the number of fixed-token chunks for this document
-        # as the target number of semantic chunks.
-        target_num_chunks = sum(
-            1
-            for chunk in reference_chunks
-            if chunk["document_id"] == document_id
+    for chunk in chunk_collection:
+        assert required_fields.issubset(chunk.keys()), (
+            f"Error: A chunk record in {method} is missing required fields."
         )
 
-        # Applies semantic chunking on this document using `target_num_chunk`.
-        document_chunks = semantic(document, target_num_chunks=target_num_chunks)
-
-        for chunk_id, chunk_text in enumerate(document_chunks):
-            semantic_chunk_records.append({
-                "text": chunk_text,
-                "document_id": document_id,
-                "chunk_id": chunk_id,
-                "method": "semantic"
-            })
-
-    return semantic_chunk_records
+        assert isinstance(chunk["text"], str) and chunk["text"].strip(), (
+            f"Error: An empty/invalid chunk text was found in {method}."
+        )
 
 
 # ======================================================================
-# STEP 4. GENERATE THE FOUR CHUNK COLLECTIONS
-#
-# Generates four chunk collections, one for each chunking method.
-# Each collection contains all chunks generated from every document in 
-# the corpus using the corresponding chunking method.
-#
-# For a fair comparison across chunking methods:
-#
-# - Fixed-token and recursive chunking use the same token size and overlap. 
-#
-# - Sentence chunking currently uses four sentences per chunk.
-#   This value is intended to approximate the target token lengh but has
-#   not yet been statistically validated.
-# 
-# - Semantic chunking uses the number of fixed-token chunks as its target
-#   number of chunks.
-# ======================================================================
-
-fixed_token_chunks = create_chunk_records(
-    documents=documents,
-    chunking_function=fixed_size_token,
-    method_name="fixed_token",
-    size=125,
-    overlap=0.25
-)
-
-recursive_chunks = create_chunk_records(
-    documents=documents,
-    chunking_function=recursive,
-    method_name="recursive",
-    size=125,
-    overlap=0.25
-)
-
-sentence_chunks = create_chunk_records(
-    documents=documents,
-    chunking_function=fixed_size_sentence,
-    method_name="sentence",
-    size=4,
-    overlap=0
-)
-
-semantic_chunks = create_semantic_chunk_records(
-    documents=documents,
-    reference_chunks=fixed_token_chunks
-)
-
-
-# ======================================================================
-# STEP 5. BM25 TEXT PREPROCESSING
+# STEP 3. BM25 TEXT PREPROCESSING
 #
 # Before indexing, converts each chunk to lowercase, removes punctuation, 
 # and splits the remaining text into word and number tokens as the format 
@@ -217,7 +118,7 @@ def tokenize_for_bm25(text):
 
 
 # ======================================================================
-# STEP 6. BUILD ONE BM25 INDEX
+# STEP 4. BUILD ONE BM25 INDEX
 #
 # Constructs a `BM25Okapi` index using all tokenized chunks in one
 # chunk collection.
@@ -247,57 +148,43 @@ def build_bm25_index(chunk_collection):
 
 
 # ======================================================================
-# STEP 7. BUILD FOUR BM25 INDEXES
+# STEP 5. BUILD FOUR BM25 INDEXES
 #
-# Builds all four separate BM25 indexes using the helper function in step 6.
+# Builds one separate BM25 index for each saved chunk collection.
+#
+# For each method method, the BM25 index is stored together with:
+#   - the original chunk records used to build the index
+#   - the corresponding tokenized chunks
 # ======================================================================
 
-fixed_token_bm25, fixed_token_tokenized = build_bm25_index(fixed_token_chunks)
-recursive_bm25, recursive_tokenized = build_bm25_index(recursive_chunks)
-sentence_bm25, sentence_tokenized = build_bm25_index(sentence_chunks)
-semantic_bm25, semantic_tokenized = build_bm25_index(semantic_chunks)
+bm25_data = {}
+
+for method in expected_methods:
+    chunk_collection = chunk_collections[method]
+
+    bm25_index, tokenized_chunks = build_bm25_index(chunk_collection)
+
+    bm25_data[method] = {
+        "index": bm25_index,
+        "chunks": chunk_collection,
+        "tokenized_chunks": tokenized_chunks
+    }
 
 
 # ======================================================================
-# STEP 8. STORE INDEXES AND CHUNK METADATA
+# STEP 6. STORE INDEXES AND CHUNK METADATA
 #
 # Stores the corresponding BM25 index, chunk records, and token lists
 # for each chunking method using Python's `pickle` module.
 # This allows the indexes and metadata to be reused during retrieval.
 # ======================================================================
 
-bm25_data = {
-    "fixed_token": {
-        "index": fixed_token_bm25,
-        "chunks": fixed_token_chunks,
-        "tokenized_chunks": fixed_token_tokenized
-    },
-
-    "recursive": {
-        "index": recursive_bm25,
-        "chunks": recursive_chunks,
-        "tokenized_chunks": recursive_tokenized
-    },
-
-    "sentence": {
-        "index": sentence_bm25,
-        "chunks": sentence_chunks,
-        "tokenized_chunks": sentence_tokenized
-    },
-
-    "semantic": {
-        "index": semantic_bm25,
-        "chunks": semantic_chunks,
-        "tokenized_chunks": semantic_tokenized
-    }
-}
-
 with open("bm25_indexes.pkl", "wb") as file:
     pickle.dump(bm25_data, file)
 
 
 # ======================================================================
-# STEP 9. VALIDATE INDEXING RESULTS
+# STEP 7. VALIDATE INDEXING RESULTS
 #
 # Confirms that each BM25 index was constructed from the expected number
 # of chunks and that the serialized index file was created successfully.
@@ -307,31 +194,29 @@ with open("bm25_indexes.pkl", "wb") as file:
 with open("bm25_indexes.pkl", "rb") as file:
     loaded_bm25_data = pickle.load(file)
 
-expected_methods = [
-    "fixed_token",
-    "recursive",
-    "sentence",
-    "semantic"
-]
+assert set(loaded_bm25_data.keys()) == set(expected_methods), (
+    "Error: The saved bm25_indexes.pkl does not contain the expected "
+    "four chunk collections."
+)
 
-expected_chunk_counts = {
-    "fixed_token": len(fixed_token_chunks),
-    "recursive": len(recursive_chunks),
-    "sentence": len(sentence_chunks),
-    "semantic": len(semantic_chunks)
-}
-
-# No output is expected. If any validation fails, an `AssertionError` will
-# be raised and the program will stop immediately.
 for method in expected_methods:
 
-    assert method in loaded_bm25_data
+    expected_chunk_count = len(chunk_collections[method])
+    saved_method_data = loaded_bm25_data[method]
 
     # Note: `corpus_size` stores the number of chunks indexed by the BM25 object.
-    assert (
-        loaded_bm25_data[method]["index"].corpus_size 
-        == expected_chunk_counts[method]
+    assert saved_method_data["index"].corpus_size == expected_chunk_count, (
+        f"Error: The {method} BM25 index contains an incorrect number of chunks"
     )
+
+    assert saved_method_data["chunks"] == chunk_collections[method], (
+        f"Error: The saved {method} chunk records do not match the original data."
+    )
+
+
+# ======================================================================
+# STEP 8. PRINT THE INDEX SUMMARY
+# ======================================================================
 
 print("\n--- BM25 indexing has completed successfully. ---\n")
 
