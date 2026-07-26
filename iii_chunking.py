@@ -122,7 +122,7 @@ def fixed_size_sentence(document, num_sentences=1, overlap=0):
 
 
 """Semantic Chunking
-Calculates the embedding vector for each sentences, calculates cosine similarities and starts a new chunk whenever the similarity is too low"""
+Calculates the embedding vector for each sentence, calculates cosine similarities and starts a new chunk whenever the similarity is too low"""
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_huggingface import HuggingFaceEmbeddings
 
@@ -170,8 +170,10 @@ def compute_chunk_stats(chunks):
 """Testing"""
 if __name__ == "__main__":
   show_sample_chunks = False
-  article1 = article_fulltexts[1]
-  # print(article1["article"][0:1000] + "\n")  # Head of first paper
+  article1 = article_fulltexts[0]
+  print(article1[0:1000] + "\n")  # Head of first paper
+  import sys
+  sys.exit()
 
   # Test chunk sizes from 125 to 250 to 500
   # Using an overlap greater than 15% since academic text requires more overlap in general
