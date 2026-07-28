@@ -10,3 +10,4 @@
 Used it for debugging openAI client - figured out how to get the api key
 Used it for implementation on how to use bioBert model as an embedder (it's not meant for embedding but is useful since it was meant for medical articles)
 Used it to understand the differences + pros/cons of the embedding model
+Used to generate evaluation_questions.txt
