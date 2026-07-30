@@ -15,8 +15,9 @@
 
 from datasets import load_from_disk
 import pickle
+import re
 
-from iii_chunking import (
+from ii_chunking import (
     fixed_size_token,
     recursive,
     fixed_size_sentence,
@@ -42,7 +43,9 @@ paper_ids = [503, 942, 1395, 3325, 3823, 4060, 4070, 4911, 1625, 1822]
 
 custom_corpus = load_from_disk("custom_corpus")
 
-documents = [paper["article"] for paper in custom_corpus]
+documents = []
+for paper in custom_corpus:
+    documents.append(re.sub(r'(?<=\D)\.(\d+)', '.', paper["article"]))  # Remove most citation numbers, because they confuse the sentence splitter
 
 if len(documents) != len(paper_ids):
     raise ValueError(
