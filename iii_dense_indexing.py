@@ -15,8 +15,9 @@ import torch
 from transformers import AutoTokenizer, AutoModel
 
 #1. Load the models
+key = open("openai_key.txt", "r").readline().strip()
 openai_client = OpenAI(
-            api_key="YOUR_OPENAI_API_KEY" #ADD IT HERE or set it as an environment variable OPENAI_API_KEY
+            api_key=key
         )
 bge_model = SentenceTransformer("BAAI/bge-large-en-v1.5")
 biobert_model = SentenceTransformer("pritamdeka/S-BioBert-snli-multinli-stsb")

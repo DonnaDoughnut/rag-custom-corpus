@@ -3,4 +3,4 @@
 __pycache__/
 .DS_Store
 bm25_indexes.pkl
-test.py
+openai_key.txt
