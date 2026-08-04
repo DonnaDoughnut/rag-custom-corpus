@@ -32,8 +32,7 @@ from ii_chunking import (
 # These IDs are added to each chunk record so that every generated chunk
 # can be traced back to its source paper in the original dataset.
 # ======================================================================
-paper_ids = [503, 942, 1395, 3325, 3823, 4060, 4070, 4911, 1625, 1822]
-
+paper_ids = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475, 899, 1625]
 
 # ======================================================================
 # STEP 1. LOAD THE CUSTOM CORPUS
