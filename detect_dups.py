@@ -1,17 +1,7 @@
-from datasets import load_from_disk
-from datasets import load_dataset
 import pickle
 from collections import Counter
 import nltk
 from nltk.tokenize import sent_tokenize
-
-dataset = load_dataset(
-    "armanc/scientific_papers",
-    "pubmed",
-    split="train",
-    trust_remote_code=True
-)
-custom_corpus = load_from_disk("custom_corpus")
 
 # Identifying the duplicate sentences in each paper.
 with open("bm25_indexes.pkl", "rb") as file:

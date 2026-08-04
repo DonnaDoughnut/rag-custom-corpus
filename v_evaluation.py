@@ -2,8 +2,8 @@
 # https://jatinbansal.com/ai-engineering/rag-evaluation/
 
 import json
-from v_bm25_retrieval import retrieve_from_bm25
-from v_dense_retrieval import load_embedding_model, dense_retrieve
+from iv_bm25_retrieval import retrieve_from_bm25
+from iv_dense_retrieval import load_embedding_model, dense_retrieve
 
 chunking_methods = [
   "fixed_token",
