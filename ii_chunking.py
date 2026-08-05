@@ -1,8 +1,9 @@
 # Referenced https://huggingface.co/docs/transformers/v5.14.0/en/main_classes/tokenizer
 
+from transformers import AutoTokenizer  # Using HuggingFace's method that picks a tokenizer based on the given generative AI model
 import math
 
-tokenizer = "BAAI/bge-small-en-v1.5"
+tokenizer = AutoTokenizer.from_pretrained("BAAI/bge-small-en-v1.5")
 tokenizer.model_max_length = int(1e30)  # Used to suppress a warning that isn't necessary for the tokenization stage
 
 """Fixed Size Chunking
