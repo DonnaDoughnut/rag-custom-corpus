@@ -44,7 +44,9 @@ custom_corpus = load_from_disk("custom_corpus")
 
 documents = []
 for paper in custom_corpus:
-    documents.append(re.sub(r'(?<=\D)\.(\d+)', '.', paper["article"]))  # Remove most citation numbers, because they confuse the sentence splitter
+    no_cite = re.sub(r'(?<=\D)\.(\d+)', '.', paper["article"]) # Remove most citation numbers, because they confuse the sentence splitter
+    normalize_whitespace = re.sub(r"\s+", " ", no_cite).strip()
+    documents.append(normalize_whitespace)
 
 if len(documents) != len(paper_ids):
     raise ValueError(

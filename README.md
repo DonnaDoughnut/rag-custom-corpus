@@ -33,4 +33,4 @@ Install the python packages listed in `requirements.txt`. These packages are req
 python -m pip install -r requirements.txt
 ```
 
-Run i_prepare_corpus.py, chunk_collections.py, iii_bm25_indexing.py, and then v_evaluation.py in that order.
+Run prepare_corpus2.py, chunk_collections.py, iii_bm25_indexing.py, and then v_evaluation.py in that order.

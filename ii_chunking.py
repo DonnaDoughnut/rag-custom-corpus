@@ -77,11 +77,18 @@ def fixed_size_sentence(document, num_sentences=1, overlap=0):
   chunk_records = []
   search_start = 0  # In case of duplicate chunks
   for i in range(0, len(sentences), num_sentences - overlap):
-    chunk = " ".join(sentences[i:i + num_sentences])
-    start = document.find(chunk, search_start)
-    if start == -1:
+    first_sent = sentences[i]
+    if num_sentences == 1:
+      chunk = first_sent
+      start = document.find(chunk, search_start)
+      end = start + len(chunk)
+    else:
+      last_sent = sentences[min(i + num_sentences - 1, len(sentences) - 1)]
+      start = document.find(first_sent, search_start)
+      end = document.find(last_sent, search_start) + len(last_sent)
+      chunk = " ".join(sentences[i:i + num_sentences])
+    if start == -1 or end == -1:
       raise ValueError("Chunk not found in document!")
-    end = start + len(chunk)
     chunk_records.append({
       "text": chunk,
       "start": start,
@@ -139,6 +146,8 @@ def fixed_size_sentence(document, num_sentences=1, overlap=0):
 Calculates the embedding vector for each sentence, calculates cosine similarities and starts a new chunk whenever the similarity is too low"""
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_huggingface import HuggingFaceEmbeddings
+import sys
+import re
 
 def semantic(document, target_num_chunks=60):
   embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
@@ -149,7 +158,14 @@ def semantic(document, target_num_chunks=60):
   for chunk in chunks:
     start = document.find(chunk, search_start)
     if start == -1:
-      raise ValueError("Chunk not found in document!")
+      # guess = document[2339:2339+len(chunk)]
+      # print(guess)
+      # print(chunk == guess)
+      # sys.exit()
+      print("Chunk not found in document")
+      print("Chunk:", chunk)
+      print("Document:", document)
+      sys.exit()
     end = start + len(chunk)
     chunk_records.append({
       "text": chunk,
@@ -159,6 +175,14 @@ def semantic(document, target_num_chunks=60):
     search_start = start
   return chunk_records
 
+# from datasets import load_from_disk
+# custom_corpus = load_from_disk("custom_corpus")
+# documents = []
+# for paper in custom_corpus:
+#     no_cite = re.sub(r'(?<=\D)\.(\d+)', '.', paper["article"]) # Remove most citation numbers, because they confuse the sentence splitter
+#     normalize_whitespace = re.sub(r"\s+", " ", no_cite).strip()
+#     documents.append(normalize_whitespace)
+# semantic(documents[0], 15)
 
 """Helper functions"""
 # Returns overlap if valid, otherwise returns 15%
