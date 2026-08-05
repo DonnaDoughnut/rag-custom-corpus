@@ -90,13 +90,15 @@ def create_chunk_records(documents, chunking_function, method_name, size, overla
         document_chunks = chunking_function(document, size, overlap)
 
         # Store each chunk together with its document and chunk metadata.
-        for chunk_id, chunk_text in enumerate(document_chunks):
+        for chunk_id, chunk in enumerate(document_chunks):
             chunk_records.append({
-                "text": chunk_text,
+                "text": chunk["text"],
                 "document_id": document_id,
                 "paper_id": paper_ids[document_id],
                 "chunk_id": chunk_id,
-                "method": method_name
+                "method": method_name,
+                "start": chunk["start"],
+                "end": chunk["end"]
             })
 
     return chunk_records
@@ -140,13 +142,15 @@ def create_semantic_chunk_records(documents, reference_chunks):
         # Applies semantic chunking on this document using `target_num_chunk`.
         document_chunks = semantic(document, target_num_chunks=target_num_chunks)
 
-        for chunk_id, chunk_text in enumerate(document_chunks):
+        for chunk_id, chunk in enumerate(document_chunks):
             semantic_chunk_records.append({
-                "text": chunk_text,
+                "text": chunk["text"],
                 "document_id": document_id,
                 "paper_id": paper_ids[document_id],
                 "chunk_id": chunk_id,
-                "method": "semantic"
+                "method": "semantic",
+                "start": chunk["start"],
+                "end": chunk["end"]
             })
 
     return semantic_chunk_records

@@ -4,6 +4,15 @@
 import json
 from iv_bm25_retrieval import retrieve_from_bm25
 from iv_dense_retrieval import load_embedding_model, dense_retrieve
+import json
+from datasets import load_from_disk
+import re
+
+paper_ids = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475, 899, 1625]
+custom_corpus = load_from_disk("custom_corpus")
+documents = []
+for paper in custom_corpus:
+    documents.append(re.sub(r'(?<=\D)\.(\d+)', '.', paper["article"]))  # Remove most citation numbers, because they confuse the sentence splitter
 
 chunking_methods = [
   "fixed_token",
@@ -19,34 +28,29 @@ with open("evaluation_questions.txt", "r", encoding="utf-8") as file:
 if __name__ == "__main__":
   print("BM25:")
   # Need to evaluate at several levels (recall@5, recall@10, recall@50)
+  # The number of gold documents is the number of excerpts in the correct answer (those separated by ...)
+  # Recall is calculated as the number of gold documents that are included in the retrieved documents, and partially overlapping chunks count
   for k in 5, 10, 50:
     for method in chunking_methods:
-      num_bm25_successes = 0
+      # Calculating the average recall over all questions
+      recall_sum = 0
       for question_record in evaluation_questions:
+        correct_locations = question_record["answer_indices"]
         query = question_record["question"]
         top_k = retrieve_from_bm25(query, method, n=k)
-        found = False
-        # Each question in the evaluation dataset has a chunk defined as the correct context, this is the paper that the chunk is in
-        correct_paper = question_record["paper_id"]
-        for doc in top_k:
-          # Each doc is dict_keys(['text', 'document_id', 'paper_id', 'chunk_id', 'method'])
-          if doc["paper_id"] == correct_paper:
-            found = True
-        if found:
-          num_bm25_successes += 1
-
-        # Testing
-        import sys
-        print("Chunking method:", method)
-        print("Query:", query)
-        print("Correct paper ID:", correct_paper)
-        for doc in top_k:
-          print("Paper", doc["paper_id"], "chunk", doc["chunk_id"], "retrieved")
-          print("Text:", doc["text"])
-        sys.exit()
-
-      print("Recall@" + str(k), "- Chunking method:", method, "- Number of questions for which it found the right paper context:",
-            num_bm25_successes, "out of", len(evaluation_questions), "questions")
+        num_found = 0
+        for answer_start, answer_end in correct_locations:
+          found = False
+          for chunk in top_k:
+            if chunk["start"] < answer_end and chunk["end"] > answer_start:
+              found = True
+              break
+          if found:
+            num_found += 1
+        recall = num_found / len(correct_locations)
+        recall_sum += recall
+      avg_recall = recall_sum/len(evaluation_questions)
+      print("Chunking method:", method, "Recall@" + str(k) + " =", avg_recall)
 
     print("Dense Retrieval:")
     for k in 5, 10, 50:
@@ -54,8 +58,10 @@ if __name__ == "__main__":
         for embedding_model in ["OpenAI", "BioBERT", "BGE", "MedCPT"]:
           # Loads the selected embedding model once and reuses it for all queries.
           model_resources = load_embedding_model(embedding_model=embedding_model)
-          num_dense_successes = 0
+          # Calculating the average recall over all questions
+          recall_sum = 0
           for question_record in evaluation_questions:
+            correct_locations = question_record["answer_indices"]
             query = question_record["question"]
             results = dense_retrieve(
               query=query,
@@ -64,13 +70,16 @@ if __name__ == "__main__":
               model_resources=model_resources,
               top_k=k
             )
-            found = False
-            correct_paper = question_record["paper_id"]
-            for doc in results:
-              if doc["paper_id"] == correct_paper:
-                found = True
-            if found:
-              num_dense_successes += 1
-          print("Recall@" + str(k), "- Chunking method:", chunking_method, "- Embedding model:", embedding_model,
-                "- Number of questions for which it found the right paper context:",
-                num_dense_successes, "out of", len(evaluation_questions), "questions")
+            num_found = 0
+            for answer_start, answer_end in correct_locations:
+              found = False
+              for chunk in results:
+                if chunk["start"] < answer_end and chunk["end"] > answer_start:
+                  found = True
+                  break
+              if found:
+                num_found += 1
+            recall = num_found / len(correct_locations)
+            recall_sum += recall
+          avg_recall = recall_sum/len(evaluation_questions)
+          print("Chunking method:", method, "- Embedding model:", embedding_model, "- Recall@" + str(k) + " =", avg_recall)

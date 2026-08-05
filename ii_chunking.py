@@ -2,30 +2,32 @@
 
 import math
 
-gen_AI_model = ""  # The name of the model used for the answer generation stage. Defaults if left blank.
+tokenizer = "BAAI/bge-small-en-v1.5"
+tokenizer.model_max_length = int(1e30)  # Used to suppress a warning that isn't necessary for the tokenization stage
 
 """Fixed Size Chunking
 Splits on a set number of characters or tokens"""
-from transformers import AutoTokenizer  # Using HuggingFace's method that picks a tokenizer based on the given generative AI model
-
 # num_tokens is the number of tokens per chunk, and overlap is the number of tokens of overlap expressed as a percentage of num_tokens.
 # Uses a default overlap of 15% of num_tokens, a number verified by the literature.
 def fixed_size_token(document, num_tokens, overlap=0.15):
   # Assigns the default overlap if invalid
   overlap = validate_parameters(document, num_tokens, overlap, True)
-  
-  if gen_AI_model:  # Possibilities include "meta-llama/Llama-2-7b-chat-hf", "google/gemma-2-2b", a bert or gpt2 tokenizer, etc.
-    tokenizer = AutoTokenizer.from_pretrained(gen_AI_model)
-  else:
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-    tokenizer.model_max_length = int(1e30)  # Used to suppress a warning that isn't necessary for the tokenization stage
-
   num_tokens_overlap = round(num_tokens * overlap)
   tokens = tokenizer.encode(document, add_special_tokens=False)
   chunks = []
+  # Get indices of tokens
+  offset_mapping = tokenizer(
+    document,
+    return_offsets_mapping=True,
+    add_special_tokens=False
+  )["offset_mapping"]
   for i in range(0, len(tokens), num_tokens - num_tokens_overlap):
-    chunk = tokenizer.decode(tokens[i:i + num_tokens])
-    chunks.append(chunk)
+    chunk_tokens = tokens[i:i + num_tokens]
+    chunks.append({
+      "text": tokenizer.decode(chunk_tokens),
+      "start": offset_mapping[i][0],
+      "end": offset_mapping[i + len(chunk_tokens) - 1][1]  # If you use num_tokens here it might go out of bounds
+    })
   return chunks
 
 
@@ -38,11 +40,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 def recursive(document, num_tokens, overlap=0.15):
   # Assigns the default overlap if invalid
   overlap = validate_parameters(document, num_tokens, overlap, True)
-  
-  if gen_AI_model:  # Possibilities include "meta-llama/Llama-2-7b-chat-hf", "google/gemma-2-2b", a bert or gpt2 tokenizer, etc.
-    tokenizer = AutoTokenizer.from_pretrained(gen_AI_model)
-  else:
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
   def token_len(text):
     return len(tokenizer.encode(text, add_special_tokens=False))
@@ -50,7 +47,21 @@ def recursive(document, num_tokens, overlap=0.15):
   num_tokens_overlap = round(num_tokens * overlap)
   text_splitter = RecursiveCharacterTextSplitter(chunk_size = num_tokens, chunk_overlap = num_tokens_overlap,
                                                  length_function = token_len)
-  return text_splitter.split_text(document)
+  chunks = text_splitter.split_text(document)
+  chunk_records = []
+  search_start = 0  # In case of duplicate chunks
+  for chunk in chunks:
+    start = document.find(chunk, search_start)
+    if start == -1:
+      raise ValueError("Chunk not found in document!")
+    end = start + len(chunk)
+    chunk_records.append({
+      "text": chunk,
+      "start": start,
+      "end": end
+    })
+    search_start = start
+  return chunk_records
 
 
 """Sentence/paragraph level chunking"""
@@ -61,12 +72,22 @@ from nltk.tokenize import sent_tokenize
 # Here overlap is number of sentences, not a percentage
 def fixed_size_sentence(document, num_sentences=1, overlap=0):
   validate_parameters(document, num_sentences, overlap, False)
-
   sentences = sent_tokenize(document)
-  chunks = []
+  chunk_records = []
+  search_start = 0  # In case of duplicate chunks
   for i in range(0, len(sentences), num_sentences - overlap):
-    chunks.append(" ".join(sentences[i:i + num_sentences]))
-  return chunks
+    chunk = " ".join(sentences[i:i + num_sentences])
+    start = document.find(chunk, search_start)
+    if start == -1:
+      raise ValueError("Chunk not found in document!")
+    end = start + len(chunk)
+    chunk_records.append({
+      "text": chunk,
+      "start": start,
+      "end": end
+    })
+    search_start = start
+  return chunk_records
 
 """Not using since paragraph breaks from the original paper don't always make it into the downloaded papers"""
 # Inspired by https://community.databricks.com/t5/technical-blog/the-ultimate-guide-to-chunking-strategies-for-rag-applications/ba-p/113089
@@ -121,7 +142,21 @@ from langchain_huggingface import HuggingFaceEmbeddings
 def semantic(document, target_num_chunks=60):
   embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-small-en-v1.5")
   text_splitter = SemanticChunker(embeddings, number_of_chunks=target_num_chunks)
-  return text_splitter.split_text(document)
+  chunks = text_splitter.split_text(document)
+  chunk_records = []
+  search_start = 0  # In case of duplicate chunks
+  for chunk in chunks:
+    start = document.find(chunk, search_start)
+    if start == -1:
+      raise ValueError("Chunk not found in document!")
+    end = start + len(chunk)
+    chunk_records.append({
+      "text": chunk,
+      "start": start,
+      "end": end
+    })
+    search_start = start
+  return chunk_records
 
 
 """Helper functions"""
@@ -143,12 +178,6 @@ def validate_parameters(document, size, overlap, percentage):
 import statistics
 # Returns a dictionary with keys "num_chunks", "mean_token_count", "median_token_count", "min_token_count", "max_token_count", and "stdev"
 def compute_chunk_stats(chunks):
-  if gen_AI_model:  # Possibilities include "meta-llama/Llama-2-7b-chat-hf", "google/gemma-2-2b", a bert or gpt2 tokenizer, etc.
-    tokenizer = AutoTokenizer.from_pretrained(gen_AI_model)
-  else:
-    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
-    tokenizer.model_max_length = int(1e30)  # Used to suppress a warning that isn't necessary for the tokenization stage
-
   results = {"num_chunks": len(chunks)}
   chunk_sizes = [len(tokenizer.encode(chunk, add_special_tokens=False)) for chunk in chunks]
   results["mean_token_count"] = sum(chunk_sizes) / len(chunks)
@@ -215,5 +244,6 @@ def compute_chunk_stats(chunks):
 # to vary in order to split at natural boundaries. The question we are interested in is, does preserving document structure improve retrieval enough
 # to outweigh the less regular chunking?
 # The semantic chunker was controlled for number of chunks produced, as the default settings could result in way larger chunks than all the other methods.
+# A BERT tokenizer was used to estimate token counts during chunk generation. Each embedding model used its native tokenizer during dense indexing.
 # Article one can be found here: https://www.tandfonline.com/doi/full/10.2147/NDT.S50763#d1e104
 # Article two can be found here: https://pmc.ncbi.nlm.nih.gov/articles/PMC3400365/
