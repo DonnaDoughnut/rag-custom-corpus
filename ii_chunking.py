@@ -260,15 +260,3 @@ def compute_chunk_stats(chunks):
 #     print()
 #   print(compute_chunk_stats(chunks))
 #   print()
-
-
-"""Notes"""
-# Fixed-size chunking divides documents into equal-sized token windows with a fixed overlap, whereas recursive chunking attempts to
-# preserve document structure by splitting on increasingly finer separators while respecting an approximate maximum chunk size.
-# Fixed token chunking produces uniform chunks with exact overlap. Recursive chunking uses the same target values but allows chunk sizes and overlap
-# to vary in order to split at natural boundaries. The question we are interested in is, does preserving document structure improve retrieval enough
-# to outweigh the less regular chunking?
-# The semantic chunker was controlled for number of chunks produced, as the default settings could result in way larger chunks than all the other methods.
-# A BERT tokenizer was used to estimate token counts during chunk generation. Each embedding model used its native tokenizer during dense indexing.
-# Article one can be found here: https://www.tandfonline.com/doi/full/10.2147/NDT.S50763#d1e104
-# Article two can be found here: https://pmc.ncbi.nlm.nih.gov/articles/PMC3400365/
