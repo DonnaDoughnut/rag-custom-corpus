@@ -1,0 +1,1629 @@
+[
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q01",
+    "question": "What distinguishes periodic limb movement disorder from restless legs syndrome according to the article?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "PLMD involves excessive periodic limb movements during sleep accompanied by clinical sleep disturbance without another primary sleep disorder, whereas RLS involves sensory and motor symptoms that commonly occur at night.",
+    "answer_span": "Periodic limb movement disorder (PLMD) is diagnosed when there are periodic limb movements during sleep (PLMS) exceeding norms for age, clinical sleep disturbance, and the absence of another primary sleep disorder or reason for the PLMS [1]. Pathological periodic limb movement index (PLMI) is defined as N15 movements/h in adults [1]. Periodic limb movement disorder is rarer than restless legs syndrome (RLS), which is characterized by the sensory motor symptoms frequently associated with PLMS, usually occurring at night and leading to disrupted sleep and daytime fatigue as in neuromuscular disorders [2]."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q02",
+    "question": "What was unusual about the patient's development of PLMD in relation to his previous sleep history?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "He developed PLMD despite having no previous history of sleep disorders or similar symptoms.",
+    "answer_span": "We report a case of TPM-induced PLMD in a patient affected by cryptogenic temporal lobe epilepsy lacking a history of previous sleep disorders."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q03",
+    "question": "How did topiramate affect the patient's epilepsy before the sleep-related symptoms appeared?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "After being gradually increased to 250 mg per day, topiramate stopped his monthly complex partial seizures, allowing carbamazepine to be discontinued.",
+    "answer_span": "Topiramate slowly titrated up to 250 mg per day induced seizure freedom and, afterward, carbamazepine was discontinued."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q04",
+    "question": "What new symptoms did the patient experience after treatment with topiramate?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "He developed insomnia, nonrestorative sleep, daytime sleepiness, and frequent nighttime leg movements that had not previously occurred.",
+    "answer_span": "Concurrently, he complained of insomnia, nonrestorative sleep, and daytime sleepiness (Epworth Sleepiness Scale (ESS) score: 16). In addition, his wife reported the appearance of frequent nocturnal leg movements that were never previously observed."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q05",
+    "question": "Why did the researchers consider metabolic or other medical causes of PLMD unlikely in this patient?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Laboratory testing showed no abnormalities in blood count, electrolytes, liver and renal function, thyroid hormones, or iron and ferritin levels.",
+    "answer_span": "Serum examination (blood count, electrolytes, liver and renal function, thyroid hormones, and iron and ferritin levels) was unremarkable."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q06",
+    "question": "What did polysomnography reveal about the severity and characteristics of the patient's PLMD while he was taking topiramate?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The PSG showed severe PLMD, with a PLMI of 62.7 movements per hour and a PLMAI of 11.9 per hour, along with several indicators of disrupted sleep.",
+    "answer_span": "Therefore, our patient underwent a full polysomnography (PSG) that showed a severe PLMD (PLMI: 62.7/h) associated with high PLM arousal index (PLMAI: 11.9/h); low sleep efficiency; high sleep latency, wakefulness after sleep onset, and number of awakenings; high percentage of light sleep (N2); and low percentage of slow-wave sleep (N3)"
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q07",
+    "question": "What relationship did the study observe between periodic limb movements and cyclic alternating pattern activity?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The limb movements were closely linked to periodic EEG arousals and CAP, with the movements particularly associated with CAP A2 and A3 phases.",
+    "answer_span": "Periodic limb movements during sleep were strictly associated with periodic electroencephalographic arousals and cyclic alternating pattern (CAP). In particular, CAP oscillations were triggered by PLM with higher presence of CAP subtypes A2 and A3"
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q08",
+    "question": "Why did the researchers discontinue topiramate and replace it with valproate?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They made the change because the patient's insomnia and daytime dysfunction were progressively worsening.",
+    "answer_span": "Therefore, because of the progressive impairment of insomnia and daytime dysfunction, TPM was slowly discontinued and switched to valproate up to 900 mg per day."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q09",
+    "question": "How did the patient's periodic limb movement measures change after topiramate was withdrawn?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Both PLMI and PLMAI improved substantially and returned to normal after topiramate was completely discontinued.",
+    "answer_span": "Periodic limb movement index and periodic limb movement arousal index showed a significant improvement and, after TPM discontinuation, reached a normal value (PLMI b 15/h)."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q10",
+    "question": "What evidence did the Naranjo assessment provide concerning the suspected relationship between topiramate and PLMD?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The Naranjo scale classified the association between topiramate use and PLMD as probable, with a score of 8 out of 13.",
+    "answer_span": "In order to evaluate the association between TPM and PLMD, the Naranjo probability scale [7] documented a probable association (Naranjo score: 8/13) between PLMD and TPM intake."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q11",
+    "question": "What limitation did the authors identify concerning the variability of PLMI across nights?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They noted that PLMI can vary considerably from one night to another in PLMD and RLS, although the pattern of nighttime limb movements was consistent enough in this patient to suggest that a single-night study could still detect the disorder.",
+    "answer_span": "Although there is a high night-to-night variability of PLMI in PLMD/RLS that may influence our results, this issue is still controversial, and the nocturnal pattern of PLM occurrence was highly reliable across nights, suggesting that a single-night study may be sufficiently sensitive to confirm diagnosis and associated sleep disturbances [8]."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q12",
+    "question": "What physiological mechanism did the authors propose to explain how topiramate might trigger PLMD?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They proposed that topiramate could alter dopaminergic signaling by affecting glutamate pathways and thereby promote PLMD in susceptible individuals.",
+    "answer_span": "Therefore, we can hypothesize that TPM may modulate the dopaminergic pathway, thereby inducing PLMD in subjects with specific individual susceptibility."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q13",
+    "question": "Why did the authors consider dopaminergic dysfunction relevant to both RLS and PLMD?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They noted that a shared disturbance of the dopaminergic system has been proposed for both disorders and that dopaminergic treatments are effective for both.",
+    "answer_span": "In addition, RLS and PLMD pathophysiology is highly debated; a common central dysregulation of dopaminergic system seems to be implicated [9]. This hypothesis is supported by the efficacy of dopaminergic treatment for both sleep disorders."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q14",
+    "question": "How did sleep efficiency differ between the patient's high-dose topiramate condition and the period after topiramate withdrawal?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Sleep efficiency increased from 81.5% while taking 250 mg of topiramate to 97.2% after topiramate was discontinued.",
+    "answer_span": "Sleep efficiency (%) 81.5% 93.1% 97.2%"
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q15",
+    "question": "How did the frequency of awakenings change as topiramate was reduced and then discontinued?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The number of awakenings decreased from 29 during treatment with 250 mg of topiramate to 17 at 50 mg and only 4 after complete withdrawal.",
+    "answer_span": "n awakenings 29 (4.4/h) 17 (2/h) 4 (0.1/h)"
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q16",
+    "question": "What happened to the patient's PLMI as topiramate dosage decreased and was eventually stopped?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "PLMI fell from 62.7 per hour at 250 mg of topiramate to 21.5 per hour at 50 mg and 11.6 per hour after topiramate was stopped.",
+    "answer_span": "PLMI 62.7/h 21.5/h 11.6/h"
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q17",
+    "question": "Which CAP phases became less prominent after topiramate withdrawal, and why were these phases considered clinically relevant?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "CAP phases A2 and A3 decreased after withdrawal, and these phases were considered markers of sleep instability and arousal associated with disturbed sleep.",
+    "answer_span": "The TPM withdrawal induced the progressive reduction of PLMS and CAP rate, particularly phases A2 and A3, considered a marker of sleep instability."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q18",
+    "question": "What does the article suggest about patients' awareness of their own periodic limb movements during sleep?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Patients generally do not notice the movements themselves, although their sleep quality may be impaired and bed partners may observe them.",
+    "answer_span": "The patients are typically not aware of these limb movements, but quality of sleep may be compromised, and the bed partners might recognize PLMS."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q19",
+    "question": "What broader interaction between sleep and epilepsy did the authors highlight when discussing the patient's symptoms?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The authors emphasized that sleep deprivation, daytime sleepiness, and abnormal sleep can trigger seizures, while epilepsy can itself affect sleep, creating a reciprocal relationship.",
+    "answer_span": "Notwithstanding, comorbidities and pharmacological treatment are other commonly accepted major factors that influence this interplay."
+  },
+
+  {
+    "paper_id": 2146,
+    "question_id": "2146-Q20",
+    "question": "What clinical approach did the authors recommend for recognizing possible drug-induced sleep disorders?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They suggested that taking a careful clinical history and performing polysomnography in selected patients may help identify sleep disorders caused by medications.",
+    "answer_span": "Therefore, an accurate clinical history and PSG study in selected cases could be useful in order to recognize potential drug-induced sleep disorders."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q01",
+    "question": "Why did the researchers focus specifically on female college students when examining physical activity and insomnia?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Because previous research had mainly examined clinical insomnia in middle-aged and older adults, while this study aimed to investigate insomnia and its relationship with physical activity in female college students.",
+    "answer_span": "Most studies have focused on management of clinical insomnia among the middle- aged and elderly, but the aim of our present study was to assess the level of insomnia among female college students, and to determine the association between their physical activity and the insomnia severity index."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q03",
+    "question": "How did the researchers measure the students' physical activity during the study?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "They used Omron pedometers to record the participants' total number of daily steps for three weeks and also had them maintain physical activity logs.",
+    "answer_span": "After recording stride length values, each subject was given a pedometer (Omron model HJ-152) in the final stage. Subjects were instructed to wear the pedometer at the level of the anterior superior iliac spine (ASIS) and also to fill in the daily physical activity log."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q04",
+    "question": "What criteria did the researchers use to classify the severity of insomnia with the ISI?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "ISI scores from 0–7 indicated no clinically significant insomnia, 8–14 indicated sub-threshold insomnia, 15–21 indicated moderate clinical insomnia, and 22–28 indicated severe clinical insomnia.",
+    "answer_span": "The scores range from 0 to 28: 0 to 7, no clinically significant insomnia; 8 to 14, sub- threshold insomnia; 15 to 21, clinical insomnia (moderate); 22 to 28, clinical insomnia (severe)."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q05",
+    "question": "How was stride length determined before the participants received their pedometers?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Participants walked ten natural steps along a seven-meter marked distance, and stride length was calculated by dividing the distance covered by ten.",
+    "answer_span": "a seven- meter distance was taped on the floor to measure stride length, which was calculated by asking subjects to take 10 steps forward, 5 steps with each foot at their natural stride bringing the feet together with the last step. The stride length was calculated by dividing the distance covered by 10."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q07",
+    "question": "What proportion of the participants had no clinically significant insomnia, sub-threshold insomnia, and moderate clinical insomnia?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Half of the participants had no clinically significant insomnia, 42% had sub-threshold insomnia, and 8% had moderate clinical insomnia.",
+    "answer_span": "50% of the subjects had no clinically significant insomnia (NCSI), 42% had sub- threshold insomnia (STI), and 8% had moderate clinical insomnia (MCI)."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q08",
+    "question": "How did the participants' physical activity change across the three-week program?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Physical activity increased from the first week through the third week.",
+    "answer_span": "The results show that physical activity increased from the first to the third week."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q09",
+    "question": "What relationship was found between physical activity and insomnia severity at weeks one and three?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Physical activity was moderately and negatively correlated with ISI scores, with correlations of −0.396 in week one and −0.378 in week three.",
+    "answer_span": "Physical activity measured as the number of steps taken correlated with the ISI values showing a moderately negative correlation, with values of r= −0.396 at week 1, and r= −0.378 at week 3 (Table 3)."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q10",
+    "question": "What did the study find about the relationship between coffee consumption and insomnia?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Coffee consumption was not significantly associated with insomnia because the observed correlation was not statistically significant.",
+    "answer_span": "which was not statistically significant. So, no association was found between caffeine intake and insomnia."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q11",
+    "question": "How was the association between sleep problems and ISI scores characterized after the motivation program?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "A statistically significant correlation was found, with a correlation coefficient of −0.353 and a p-value below 0.01.",
+    "answer_span": "Pearson correlation analysis revealed a significant correlation between Sleep problem and the Insomnia Severity Index after the motivation program (r= −0.353, p˂ 0.01)"
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q12",
+    "question": "How did the average number of steps taken change over the course of the study?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The mean number of daily steps was 5,458.6 in week one, 5,368.7 in week two, and 4,733.3 in week three.",
+    "answer_span": "Week 1 72 464.3 11,588.8 5,458.6 2.2\nWeek 2 62 391.3 20,544.8 5,368.7 2.7\nWeek 3 62 364.1 13,248.8 4,733.3 2.1"
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q13",
+    "question": "What did the authors conclude about the effect of increased physical activity on sleep among the students?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "They concluded that increasing physical activity appeared to improve the students' sleep patterns.",
+    "answer_span": "Prevalence of insomnia was common among female Saudi students and increase in physical activity appears to improve the sleep pattern."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q14",
+    "question": "Why did the authors consider the findings consistent with previous research on exercise and sleep?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Their finding of a negative relationship between physical activity and insomnia severity agreed with earlier evidence that exercise benefits sleep problems, particularly insomnia.",
+    "answer_span": "We found a mild negative correlation between physical activity and the insomnia severity index. This is consistent with earlier findings that exercise has a beneficial effect on sleep problems especially insomnia16)"
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q15",
+    "question": "What potential explanation did the authors give for how exercise can influence sleep?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They suggested that exercise lasting more than an hour may affect sleep through changes in sleep architecture, including aspects such as frequency, duration, daytime sleep, and quality.",
+    "answer_span": "The effect of exercise on sleep is observed when it exceeds 1 hour in duration, and appears to be related to alteration of sleep architecture, e.g. frequency, duration, daytime sleep, quality etc13)"
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q16",
+    "question": "What adverse consequences of poor sleep did the authors identify as particularly relevant to students?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Poor sleep can negatively affect learning, memory, awareness, and higher mental functions, potentially resulting in tiredness, irritability, depression, and poorer performance.",
+    "answer_span": "poor sleep quality has adverse effects on learning, memory, and awareness adversely affecting work performance, especially among students. Students need to show a high level of performance, which may not be achieved with sleep disturbances, because higher mental functions would be affected, leading to unhappiness, irritability, tiredness, depression and decreased level of performance."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q18",
+    "question": "At what point during the three-week program was physical activity highest, and what happened afterward?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Physical activity was highest during the second week and then decreased during the third week.",
+    "answer_span": "Physical activity was observed to be highest in the second week, and it gradually reduced in the third week."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q19",
+    "question": "What did the researchers recommend for future studies to better establish the relationship between physical activity and insomnia?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "They recommended using a longer motivational program with a larger participant group.",
+    "answer_span": "We recommend further research with a longer duration motivation program in a larger group to establish a stronger relationship between physical activity and insomnia."
+  },
+
+  {
+    "paper_id": 10884,
+    "question_id": "10884-Q20",
+    "question": "How did the study's findings on physical activity and sleep quality compare with evidence discussed from other populations?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The authors noted that previous studies found beneficial effects of exercise on sleep in groups such as post-menopausal women and middle-aged or older adults with chronic primary insomnia, which was consistent with their findings in Saudi female college students.",
+    "answer_span": "Moderate intensity exercise improved sleep quality among post -menopausal sedentary women21) . Moderate intensity aerobic exercise reduced pre-sleep anxiety and improved the sleep of middle-aged and older patients with chronic primary insomnia22, 23) ."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q02",
+    "question": "What distinguishes chronic insomnia from insomnia symptoms in terms of duration?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The article considers insomnia chronic when the symptoms continue for at least six months.",
+    "answer_span": "If the symptoms persist for at least 6 months, chronic insomnia is being diagnosed."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q03",
+    "question": "What difference between ICD-10 and DSM-IV-TR does the article identify regarding the frequency of insomnia symptoms?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "ICD-10 requires insomnia symptoms to occur at least three nights per week, whereas DSM-IV-TR does not specify this frequency requirement.",
+    "answer_span": "The ICD-10 also specifies the frequency (at least 3 nights per week) for the occurrence of symptoms, in addition to the duration of at least 1 month, which is the same in both diagnostic systems."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q04",
+    "question": "What physiological and psychological model does the article use to explain how insomnia develops and persists?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The article describes insomnia as being initiated and maintained by hyperarousal involving cognitive, emotional, motor, and physiological processes.",
+    "answer_span": "According to current etiological theories, insomnia is probably initiated and maintained by hyperarousal on a cognitive, emotional, motor, and physiological level."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q05",
+    "question": "What maladaptive behaviors may people with primary insomnia adopt in an attempt to improve their sleep?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They may spend more time in bed, go to bed earlier, nap during the day, or use the bed for activities such as reading, working, or watching television.",
+    "answer_span": "Patients with PI intuitively develop maladaptive patterns assuming to improve and promote their sleep, such as staying in bed for a longer period of time, going to bed earlier, daytime naps, reading, working, or watching TV in bed."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q06",
+    "question": "What evidence does the article provide for a sex difference in the occurrence of insomnia?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Women were reported to have insomnia more often than men, with one meta-analysis finding a risk ratio of 1.41.",
+    "answer_span": "In addition, women are more often affected than men with a risk ratio of 1.41 reported by Zhang and Wing in a meta-analysis of 31 papers and 718,828 female vs 546,187 male participants."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q07",
+    "question": "What did the review report about the long-term effectiveness of cognitive-behavioral therapy compared with psychotropic medication?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The review reported that cognitive-behavioral therapy alone was more effective than psychotropic medication over the long term.",
+    "answer_span": "Research indicates that cognitive-behavioral therapy alone is superior to the intake of psychotropic substances in the long run."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q08",
+    "question": "What did the review conclude about the evidence base for long-term hypnotic drug treatment?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Although hypnotics are frequently prescribed for extended periods in practice, only two long-term studies had been published at the time of the review.",
+    "answer_span": "Only two long-term studies have been published – a striking finding – given the fact that in clinical practice, sleep medications are prescribed for long periods of time very frequently."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q09",
+    "question": "What did the meta-analysis of older adults suggest about the benefits and risks of sedating hypnotics?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Sedating hypnotics produced only small improvements in sleep outcomes in people over 60, while increasing the risk of cognitive, fatigue, and psychomotor adverse effects.",
+    "answer_span": "In summary, the small benefit in the use of sedating hypnotics for patients older than 60 years does not seem to redeem the occurring side effects and risks."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q10",
+    "question": "Why does the article caution against long-term use of benzodiazepines and Z-drugs?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Long-term treatment raises concerns about tolerance and dependence, and benzodiazepines are particularly contraindicated in people at risk of developing addictive disorders.",
+    "answer_span": "The problem of drug tolerance and dependence is a major concern in the long-term treatment of insomnia with hypnotics."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q11",
+    "question": "How did the review compare the effectiveness of newer Z-drugs with older benzodiazepine hypnotics?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The comparative evidence did not show greater effectiveness for Z-drugs, although they were more expensive for health care systems.",
+    "answer_span": "Therefore, the authors critically concluded that newer Z-drugs and older BZ drugs are equally effective, with the newer hypnotics being more expansive for health care systems."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q12",
+    "question": "What was the main concern about using antipsychotic medications to treat insomnia in elderly patients with dementia?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The article warns against uncontrolled use because overdosing is associated with a significantly increased mortality rate.",
+    "answer_span": "However, expert group reviews and meta-analyses50 keep warning of an uncritical and uncontrolled prescription for elderly dementia patients due to a significantly increased mortality rate51 caused by overdosing."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q13",
+    "question": "For which type of sleep problem does the article indicate that melatonin is particularly useful?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Melatonin is particularly useful for circadian rhythm sleep disorders, including delayed sleep phase syndrome.",
+    "answer_span": "Melatonin is best used in the treatment of circadian rhythm sleep disorders, such as the delayed sleep phase syndrome (DSPS), as shown by Buscemi and colleagues."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q14",
+    "question": "What limitations prevented the review from concluding that acupuncture was superior to other insomnia treatments?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Problems included inadequate randomization and blinding, imprecise diagnostic procedures, insufficient safety information, heterogeneous acupuncture methods, and weaknesses in sham controls.",
+    "answer_span": "However, limiting factors in these studies are the methodological shortcomings, such as problems with randomization, blinding issues, imprecise diagnostic procedure, and insufficient safety data resulting in mostly poor-quality research designs."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q15",
+    "question": "What are the principal components of cognitive-behavioral treatment for insomnia described in the article?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The main components are psychoeducation, stimulus control, sleep restriction, relaxation techniques, and cognitive techniques.",
+    "answer_span": "The main elements of cognitive psychological therapy of insomnia are psychoeducation, stimulus control, sleep restriction, relaxation therapies, and cognitive techniques."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q16",
+    "question": "Why does the article recommend combining sleep hygiene with other psychological treatments rather than using it alone?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Sleep hygiene is considered necessary but insufficient by itself, so it should be combined with approaches such as sleep restriction and stimulus control.",
+    "answer_span": "Regarding the efficacy of sleep hygiene recommendations in the treatment of insomnia, Morin et al62 conclude in their review that sleep hygiene education is a necessary part of therapy but not a sufficient treatment approach."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q17",
+    "question": "What did the study of internet-based CBT reported in the review find when comparing the intervention with a wait-list control?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Participants receiving internet-based CBT showed significant improvements in insomnia severity, wake time after sleep onset, and sleep efficiency, whereas the control group did not show significant changes.",
+    "answer_span": "Significant improvements were reported for the Internet group on the Insomnia Severity Index, wake after sleep onset, and sleep efficiency compared with nonsignificant changes in the control group."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q18",
+    "question": "What did the meta-analysis by Murtagh and Greenwood find regarding changes in sleep latency, awakenings, and total sleep time?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The analysis found reductions in sleep latency and the number of awakenings and an increase in total sleep time, with mean changes of −24 minutes, −1.2 awakenings, and +32 minutes, respectively.",
+    "answer_span": "In terms of mean differences and percent change, they are reported as follows: SL, = −24 min (39.5% change), NOA = −1.2 (73% change), and TST = +32 min (9.4% change)."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q19",
+    "question": "What did the review conclude about the relative effectiveness of behavioral interventions across middle-aged and older adults?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Although some differences appeared for sleep efficiency and total sleep time, the major sleep outcomes showed no differences between age groups, suggesting comparable effectiveness.",
+    "answer_span": "The results of the criteria, such as sleep latency, wakening after sleep onset, and sleep quality, did not show any differences between the age cohorts; so, therefore, behavioral interventions are equally effective across the age groups."
+  },
+
+  {
+    "paper_id": 13995,
+    "question_id": "13995-Q20",
+    "question": "What overall treatment strategy does the article recommend for managing insomnia, particularly when considering long-term outcomes and access to care?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The review identifies CBT as the preferred first-line long-term treatment, while suggesting internet-based and stepped-care approaches as ways to improve access; hypnotics should generally be limited to short-term use.",
+    "answer_span": "Hypnotic medications are well evaluated for a short-term usage and, therefore, should only be used for a short period of time in clinical practice, until more long-term studies will be published in the future. ... CBTs are the first-line option for insomnia as long-term effects have been shown conclusively. However, a major problem of CBT is the assessability for most insomnia patients. Internet-based therapy might be a solution for this; in addition, face-to-face treatment could be administered through a stepped-care approach"
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q01",
+    "question": "What was the primary purpose of examining inflammation, oxidative stress, and antioxidants in relation to sleep quality?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The study sought to understand their relationships with sleep quality and determine whether they indirectly explained associations between sleep quality and cardiometabolic health.",
+    "answer_span": "the purpose of this study is to (i) explore the interrelationship between sleep quality and inflammation (CRP) [14], oxidative stress (GGT) [15], and antioxidants (bilirubin, carotenoids, uric acid, and vitamins A, C, D, and E) [16, 17] and (ii) quantify the indirect mediating effect of these factors on the sleep quality-cardiometabolic health relationships in free-living adults."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q02",
+    "question": "What population and dataset were used for this investigation?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The analysis used adults aged 20 or older from the 2005–2006 NHANES cycle, resulting in a final sample of 2,072 participants.",
+    "answer_span": "NHANES 2005-2006 cycle, which had an initial sample of 10,348 individuals, was used in this study. Subsequent exclusions were made for age (<20 y: 𝑁 = 5,369), pregnancy (𝑁 = 336), missing MetS components (𝑁waist circumference = 455, 𝑁triglyceride = 196, 𝑁blood pressure = 79, 𝑁fasting plasma glucose = 1, 826, and 𝑁HDL cholesterol = 0), and missing sleep quality variables (𝑁 = 15) for a final analytic sample of 2,072."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q03",
+    "question": "How was metabolic syndrome defined in the study?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Metabolic syndrome was defined using the Joint Interim Statement, requiring at least three of five specified abnormalities involving waist circumference, triglycerides, HDL cholesterol, blood pressure, and fasting glucose.",
+    "answer_span": "The Joint Interim Statement was used to define metabolic syndrome (MetS) [≥3 of elevated waist circumference: men (≥102 cm) and women (≥88 cm); elevated triglycerides or medication: ≥1.69 mM; low HDL cholesterol or medication: men (<1.04 mM) and women (<1.29 mM); elevated blood pressure or medication: systolic (≥130 mmHg) and/or diastolic (≥85 mmHg); and elevated fasting plasma glucose or medication use (≥5.6 mM)] [21]."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q04",
+    "question": "What six sleep-related experiences were combined to create the overall sleep quality measure?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The measure covered difficulty falling asleep, trouble returning to sleep after waking, waking too early, feeling unrested, excessive daytime sleepiness, and not getting enough sleep.",
+    "answer_span": "Overall sleep quality was determined from six questions: “How often did you have trouble falling asleep?”; “How often did you wake up during night and had trouble getting back to sleep?”; “How often did you wake up too early in morning and were unable to get back to sleep?”; “How often did you feel unrested during the day, no matter how many hours of sleep you had?”; “How often did you feel excessively or overly sleepy during day?”; and, “How often did you not get enough sleep?”"
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q05",
+    "question": "How were participants divided into the four overall sleep quality categories?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Scores below 3 were classified as good, scores from 3 to below 7 as fair, scores from 7 to below 12 as poor, and scores of 12 through 24 as very poor.",
+    "answer_span": "The sleep quality score was subsequently categorized as good (0 to <3); fair (3 to <7); poor (7 to <12); and very poor (≥12 to 24) [3]."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q06",
+    "question": "Which biological markers were treated as mediators in the analysis?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The mediators included CRP, GGT, bilirubin, carotenoids, uric acid, and vitamins A, C, D, and E.",
+    "answer_span": "Mediators considered in this study were CRP, GGT, bilirubin, carotenoids, uric acid, and vitamins A, C, D, and E and were obtained from laboratory files [23]."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q07",
+    "question": "How did the researchers statistically evaluate the indirect effects of the proposed mediators?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They used logistic regression for metabolic syndrome as a binary outcome and general linear models for the number of metabolic syndrome components and individual cardiometabolic measures, with indirect effects evaluated using Sobel and Joint Significance tests.",
+    "answer_span": "the indirect mediation effect of CRP, GGT, bilirubin, carotenoids, uric acid, and vitamins A, C, D, and E on the sleep-cardiometabolic health relationship was estimated using (i) logistic regression for binary outcomes (i.e., MetS) and (ii) general linear models for the number of MetS components and individual cardiometabolic parameters [18]."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q09",
+    "question": "Which sleep quality group showed the most favorable inflammation and oxidative stress profiles?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Participants with fair sleep quality had the most favorable inflammation and oxidative stress profiles.",
+    "answer_span": "Those reporting fair, but not good, quality of sleep had the optimal inflammation and oxidative stress profiles."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q10",
+    "question": "How did CRP and GGT compare with their clinical reference ranges across the sleep quality categories?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "CRP was above the clinical reference range in every sleep quality group, whereas GGT was within the reference range for every group except those with very poor sleep.",
+    "answer_span": "However, inflammation was above the clinical reference range across all sleep quality categories. For GGT, all levels of sleep quality except those with very poor quality sleep had mean values within the clinical reference range."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q11",
+    "question": "Which antioxidants showed modest mediation of the relationships between sleep quality and metabolic syndrome outcomes?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Vitamins A and C were modest mediators of both the sleep quality–metabolic syndrome relationship and the relationship with the number of metabolic syndrome components.",
+    "answer_span": "Overall, vitamins A and C were modest mediators of the sleep quality-MetS and sleep quality-number of MetS components relationships (Table 2)."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q12",
+    "question": "Which mediators were found to have moderate effects on the relationship between sleep quality and waist circumference?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "CRP and vitamin C showed moderate mediation of the sleep quality–waist circumference relationship, while vitamin A, GGT, and carotenoids also showed relevant mediation in the analyses.",
+    "answer_span": "Further exploration of the indirect effect revealed these antioxidants were also moderate (≥0.09) mediators of the sleep quality-waist circumference and sleep quality-systolic blood pressure relationships (Table 3). Additionally, the sleep quality-waist circumference and sleep quality-diastolic blood pressure relationships were moderately mediated by CRP."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q13",
+    "question": "How did the mediation findings differ between men and women?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The mediation effects were substantially stronger in women, where CRP, GGT, carotenoids, uric acid, and vitamin C showed moderate-to-large mediation for selected sleep-cardiometabolic relationships.",
+    "answer_span": "In women, CRP, uric acid, and vitamin C were large mediators of the sleep quality-waist circumference relationship and moderately mediated by carotenoids and GGT. Uric acid was also a large mediator of the sleep quality-systolic blood pressure relationship in women, while CRP and carotenoids were moderate mediators. Finally, vitamin C was a moderate mediator of the sleep quality-diastolic blood pressure relationship in women."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q14",
+    "question": "Why did the researchers find the favorable biomarker profiles among fair and poor sleepers surprising?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They had expected the most favorable inflammation, oxidative stress, and antioxidant levels among participants with at least good sleep quality rather than among fair or poor sleepers.",
+    "answer_span": "Our finding of optimal inflammation, oxidative stress, and antioxidant levels amongst the fair or poor sleep quality categories was surprising, as we expected optimal levels amongst those with at least good sleep quality."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q15",
+    "question": "What limitation of the sleep quality score did the authors suggest could affect its relationship with metabolic syndrome?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The six sleep-quality questions were given equal weight even though their individual associations with metabolic syndrome differed, suggesting that a weighted index might be more appropriate.",
+    "answer_span": "Another possible explanation is the definition of sleep quality, which is based on the six questions that were assigned equal weights [3]. In a previous analysis, we found that the odds of MetS varied between questions, with no significant relationship for getting enough sleep (OR: 1.06) and roughly twofold increases for trouble falling asleep, feeling overly sleepy, and waking up during the night, after adjusting for age, sex, ethnicity, education, income, smoking, recreational physical activity, and sleep duration (unpublished data). Therefore, future work may benefit from the development of a recalibrated (weighted index) of sleep quality."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q16",
+    "question": "What did the authors conclude about the role of CRP and vitamin C in the connection between sleep quality and abdominal obesity?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The findings provided initial evidence that CRP and vitamin C may mediate the relationship between sleep quality and abdominal obesity.",
+    "answer_span": "While the direct inflammatory and antioxidant mechanisms purported to influence the relationship between poor sleep quality and obesity remain unknown, our study provides initial evidence of a mediating role of CRP and vitamin C on the relationship between sleep quality and abdominal obesity."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q17",
+    "question": "Which mediator, rather than vitamin C, was found to moderately mediate the sleep quality–systolic blood pressure relationship?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Vitamin A was the mediator that showed a moderate effect on the sleep quality–systolic blood pressure relationship.",
+    "answer_span": "we did not find that it significantly mediated the sleep quality-systolic blood pressure relationship; rather, we found vitamin A moderately mediated the sleep quality-systolic blood pressure relationship."
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q19",
+    "question": "Why did the authors consider the self-reported nature of the sleep measures to be a limitation?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Self-reported sleep measures can be affected by recall and response biases, and the study lacked objective population-based sleep measures such as accelerometry or polysomnography.",
+    "answer_span": "since all sleep quality variables were self-reported, they are susceptible to recall and response biases. However, we are not aware of a comprehensive population-based dataset that contains objective measures of sleep quality along with other physical measures necessary for this research question [i.e., accelerometry, polysomnography, or electroencephalogram,"
+  },
+
+  {
+    "paper_id": 17302,
+    "question_id": "17302-Q20",
+    "question": "What overall conclusion did the authors draw about improving sleep quality and cardiometabolic health?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They concluded that improving sleep quality could potentially reduce cardiometabolic decline through pathways involving inflammation, oxidative stress, and antioxidants, although more prospective research is needed.",
+    "answer_span": "Improving sleep quality may minimize cardiometabolic decline though mechanisms involving inflammation, oxidative stress, and antioxidants. Further prospective work is needed to extend our understanding of the multiple pathways that may govern these factors."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q01",
+    "question": "What was the main reason the researchers examined sleep spindle characteristics in people with insomnia?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They wanted to determine whether altered sleep protection mechanisms, reflected in spindle characteristics, might contribute to disturbed sleep and sleep misperception in insomnia.",
+    "answer_span": "This study’s objective was to document sleep spindles characteristics in INS compared with GS and to investigate their potential role in sleep consolidation and misperception."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q02",
+    "question": "What are sleep spindles, and during which sleep stage are they most characteristic?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Sleep spindles are NREM EEG oscillations that occur during sleep and are particularly characteristic of stage 2.",
+    "answer_span": "Sleep protection mechanisms can be measured using phasic events such as sleep spindles, which are nonrapid eye movement (N-REM) electroencephalographic oscillations appearing only during sleep. Although they can be observed in stages 2, 3, and 4, they are hallmarks of stage 2"
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q03",
+    "question": "How did the researchers distinguish paradoxical insomnia from psychophysiological insomnia?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Paradoxical insomnia required relatively preserved objective sleep together with substantial discrepancies between PSG and subjective reports, whereas participants not meeting those criteria were classified as psychophysiological insomnia.",
+    "answer_span": "According to those criteria, PARA-I must present, on two consecutive nights of PSG, (1) a TST over 380 minutes or a SE of 80% and (2) an overestimation of ≥ 60 minutes of their SOL, an underestimation of ≥ 60 minutes of their TST, or ≥ 15% of their SE based on the difference between PSG data and sleep diary data filled in the laboratory on the morning following PSG recordings. INS not meeting these criteria were included in the PSY-I subgroup and those only meeting the second criterion were excluded."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q04",
+    "question": "What criteria were used to identify participants as insomnia sufferers rather than good sleepers?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Insomnia participants had frequent sleep difficulties, elevated ISI scores, daytime consequences, and persistent symptoms not attributable to another disorder or medication, whereas good sleepers reported minimal sleep difficulties and had lower ISI scores.",
+    "answer_span": "Those classified as INS reported sleep difficulties at least 3 nights per week (manifested by sleep onset [SOL] or awakenings of more than 30 min or a total sleep time [TST] of less than 6.5 h). Also, on the Insomnia Severity Index (ISI [39]), they had a score of 15 or over and reported at least one moderate daytime consequence due to sleep loss. Finally, their sleep difficulties had to be present for at least 6 months"
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q06",
+    "question": "Why was the third laboratory night selected for the primary sleep and spindle analyses?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The third night was considered the most representative of the participants' usual sleep because recovery effects can occur during the second night and spindle characteristics are relatively stable across nights.",
+    "answer_span": "As a recovery effect is often seen on the second night of PSG recordings, and because sleep spindles are relatively stable across nights in individuals, night 3 was considered representative of participants’ usual sleep and sleep spindles quality and quantity."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q07",
+    "question": "How did the researchers calculate the total sleep time misperception index?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They calculated it by subtracting subjective TST from objective TST and dividing the result by objective TST.",
+    "answer_span": "A Total Sleep Time Misperception Index (TST-MI) was calculated using objective (PSG recording) and subjective (sleep diary) data of night 3 using [(TST objective − TST subjective)/TST objective]"
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q08",
+    "question": "What did the study find about subjective sleep reports among the two insomnia groups compared with good sleepers?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Both insomnia groups reported taking longer to fall asleep, spending more time awake during the night, and having lower sleep efficiency than good sleepers.",
+    "answer_span": "Our two groups also reported taking more time to fall sleep, being awake longer during the night as well as having a lower sleep efficiency than GS."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q09",
+    "question": "What surprising finding emerged when the researchers compared objective PSG sleep measures across the three groups?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Despite differences in subjective sleep reports, none of the objective PSG measures differed significantly among the groups.",
+    "answer_span": "However, regarding objective measures, no significant between-groups difference was found for any measures."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q10",
+    "question": "Which sleep spindle characteristic differed significantly among the groups?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Spindle duration during stage 2 sleep differed significantly, with paradoxical insomnia participants having shorter spindles than good sleepers.",
+    "answer_span": "Analyses showed that spindles duration in stage 2 sleep was significantly different between groups (𝐻(2) = 8.769, 𝑝 = 0.012). Post hoc tests with a Bonferroni correction for multiple comparisons revealed that the sleep spindles of PARA-I (mean rank = 26.53) were shorter than GS (mean rank = 41.22; adjusted 𝑝 value = 0.016) but not from PSY-I."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q11",
+    "question": "How did the number and density of sleep spindles compare among paradoxical insomnia, psychophysiological insomnia, and good sleepers?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The number and density of sleep spindles did not significantly differ among the three groups.",
+    "answer_span": "Other characteristics were not significantly different between PARA-I, PSY-I, and GS for either stage 2 or SWS sleep (shown in Table 4)."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q12",
+    "question": "What did the regression analyses reveal about the ability of spindle characteristics to explain overestimation or underestimation of total sleep time?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Neither spindle characteristics nor objective sleep measures significantly predicted either overestimation or underestimation of total sleep time.",
+    "answer_span": "The multiple regression models showed that no variable added to the models significantly predicted the overestimation (𝐹(20, 11) = 1.425, 𝑝 = 0.277) or underestimation (𝐹(21, 13) = 2.320, 𝑝 = 0.061) of TST."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q13",
+    "question": "What was the difference in spindle duration between good sleepers and paradoxical insomnia participants, and what possible factor could have influenced this result?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Good sleepers had longer spindles than paradoxical insomnia participants, but the age difference between the groups may have contributed because younger individuals tend to have longer spindle durations.",
+    "answer_span": "As such, GS would then benefit from a longer sustained protection than PARA-I. This result could also be evaluated in relation to density. As the presence of the sleep spindle seems to be identical in terms of spindle per minute, a difference in length of these phasic events could influence the sleep maintenance. It is also important to note that, in our sample, GS were significantly younger in age than PARA-I. Age has been related to spindles length as younger individuals do show longer spindle duration and it is possible that the difference in sleep spindles duration is driven by this age difference."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q14",
+    "question": "Why did the researchers suggest that the third laboratory night might not fully represent the usual sleep of insomnia participants?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Insomnia involves substantial night-to-night variability, so a single laboratory night may not accurately capture an individual's typical sleep pattern.",
+    "answer_span": "Indeed, chronic insomnia is characterized by great internight variability, with alternations between good and bad nights in a typical week [52]. This variability in sleep patterns can also be identified during laboratory nights, both for INS and GS."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q15",
+    "question": "What explanation did the authors give for the unexpected similarity between psychophysiological insomnia and good sleepers in objective sleep measures?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They suggested that the psychophysiological insomnia participants may simply have experienced a well-consolidated night while in the laboratory.",
+    "answer_span": "In our sample, the fact that PSY-I showed no objective sleep differences compared with PARA-I or GS may be the reflection of a good consolidated night in the laboratory."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q16",
+    "question": "What did the study find about the proposed relationship between sleep spindles and sleep misperception?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The results did not support the prediction that spindle characteristics would explain differences in perceived sleep duration.",
+    "answer_span": "However, according to our results, the sleep spindles characteristics do not seem to have a predictive value on the perception of being asleep."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q17",
+    "question": "What alternative sleep microstructure measures did the authors suggest could provide additional information about sleep instability in paradoxical insomnia?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They suggested examining microarousals and cyclic alternating patterns as measures that may be more sensitive to sleep instability and EEG arousals.",
+    "answer_span": "Furthermore, sleep consolidation in PARA-I could also be studied by sleep microstructure, which is sometimes more attuned with EEG arousals. For example, the microstructure could be studied through microarousals, being defined as a brief increase in EEG frequency that could include theta, alpha, and/or frequencies greater than 16 Hz, excluding spindles [55] or by EEG cycling alternating patterns (CAPs) which are fluctuations in arousal translating in an arousal phase (A1 to A3) followed by a quiet sleep phase (B [56])."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q18",
+    "question": "What methodological limitation did the authors identify regarding automatic sleep spindle detection?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Automatic spindle detection can produce false positives, potentially identifying other EEG elements as spindles and reducing the specificity of the results.",
+    "answer_span": "First, the use of algorithms to detect sleep spindles is generally associated with false positive [62]. This can lead to the detection of various sleep EEG elements other than sleep spindles and thus a reduced specificity in the representation of the sleep protection mechanisms."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q19",
+    "question": "Why might restricting spindle analysis to the C3 electrode have limited the study's ability to explain sleep misperception?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Sleep spindle characteristics can vary across scalp locations, so examining only C3 may have missed regional patterns that contribute to sleep perception.",
+    "answer_span": "Because our study focused solely on sleep spindles from C3, we did not study distinctive patterns in different scalp areas, which may have contributed differently to sleep perception. Indeed, some differences in spindles characteristics, according to each derivation, were previously observed by other researchers [21]."
+  },
+
+  {
+    "paper_id": 19577,
+    "question_id": "19577-Q20",
+    "question": "What overall conclusion did the authors reach about sleep spindles as a protective mechanism in insomnia?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The evidence was inconclusive, although stage 2 spindle duration was shorter in paradoxical insomnia than in good sleepers and its significance remains uncertain.",
+    "answer_span": "In summary, in the present study, the evidence regarding sleep spindle as a sleep protection mechanism remains unclear. However, sleep spindles duration in stage 2 differed between PARA-I and GS, as the length of spindles is shorter for this insomnia subgroup. The implications of this result are uncertain, the literature being scarce regarding the different functions of the characteristics of the sleep spindle."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q01",
+    "question": "Why did the researchers consider a non-drug treatment for insomnia particularly important for older adults?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Long-term use of sleep medications can lead to problems such as dependence, tolerance, and reduced sleep depth, whereas cognitive-behavioral approaches such as sleep restriction avoid these medication-related complications.",
+    "answer_span": "Because of drug complications and side effects such as drug dependency and resistance and decrease of sleep depth in long-term intake of sleep medication, cognitive-behavior therapy including sleep restriction therapy which does not cause these problems is more considered."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q03",
+    "question": "Why did the authors choose to study sleep restriction therapy among older adults in Iran?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They identified a lack of previous Iranian research on cognitive-behavioral sleep restriction therapy in older adults, despite a high prevalence of sleep disturbances among elderly people attending the study center.",
+    "answer_span": "Since no studies had been previously conducted on the effect of cognitive behavior therapies including sleep restriction treatment on quality of sleep among the elderly in Iran, and with regard to the high prevalence of sleep disturbances among the elderly referring to Shiraz Jahandidegan canter, the present study aimed at investing the effect of sleep restriction treatment on sleep quality, amount of sleep medication intake, and elderly daytime function."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q04",
+    "question": "How were participants selected and assigned to the intervention and control conditions?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Fifty eligible participants were selected using convenience sampling and then assigned to the experimental and control groups through randomized blocks.",
+    "answer_span": "After complete explanation of the study to the elderly and consideration of inclusion criteria, using convenient sampling method, 50 subjects were selected and assigned to experimental and control groups through randomized blocks."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q07",
+    "question": "What principle did the sleep restriction intervention use to determine how much time participants should spend in bed?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The intervention sought to reduce awake time in bed by making each participant's time in bed as close as possible to their actual total sleep time.",
+    "answer_span": "In sleep restriction therapy method, the reason for insomnia and low sleep quality is supposed to be the time the person is in bed but awake. The goal of sleep restriction therapy is to lower this time interval. In this case, it is tried to make the persons’ time in bed as close as possible to total sleep time."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q08",
+    "question": "How was the weekly sleep schedule adjusted when a participant's sleep adequacy was at least 90%, between 80% and 90%, or below 80%?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "At 90% or higher, time in bed was increased by 15–20 minutes; between 80% and 90%, the existing schedule was maintained; and below 80%, time in bed was reduced by 15–20 minutes.",
+    "answer_span": "If mean sleep adequacy in the past week has been ≥90%, 15-20 min are added to individuals’ time in bed, this extra time is either in the form of earlier bed time or late wake up in the morning (for instance, if they had been recommended to go to be at 12th week before, this week they go to bed at 11:40, or if they were supposed to wake up at 7:00, this week, they wake up at 7:20). If mean sleep adequacy was 80-90%, the same schedule of the past week is repeated for the following week, and, if mean sleep adequacy is less than 80%, 15-20 minutes is decreased from individuals’ time in bed"
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q09",
+    "question": "Which tool did the researchers use to evaluate sleep quality, and what aspects of sleep did it assess?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They used the Pittsburgh Sleep Quality Questionnaire, which assessed subjective sleep quality, latency, sleep quality, disturbances, duration, sleeping medication use, and daytime dysfunction.",
+    "answer_span": "Pittsburgh index is a self assessment questionnaire to investigate the sleep in the past month. The items investigated by this questionnaire include subjective sleep quality (self concept from one’s sleep), sleep latency, sleep quality, sleep disturbances, sleep duration, amount of sleeping medications, and daytime dysfunction."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q10",
+    "question": "Were the experimental and control groups comparable on their sleep measures before the intervention?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Yes. Before treatment, the groups did not significantly differ in sleep quality or the assessed sleep-related measures.",
+    "answer_span": "The subjects had no significant difference concerning pre-tests of sleep quality, subjective sleep quality, sleep latency, sleep adequacy, sleep disturbances, sleep duration, amount of sleeping medications, and day time dysfunction (the groups were identical)."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q11",
+    "question": "How did overall sleep quality change in the intervention group compared with the control group after treatment?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The intervention group's mean sleep quality score improved from 14.21 to 11.26, whereas the control group's score changed only from 13 to 12.78; the post-treatment difference between groups was significant.",
+    "answer_span": "Sleep quality Intervention 14.21 2.67 1.43 0.16 11.26 2.05 −2.16 0.038\nControl 13 2.53 12.78 2.29"
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q12",
+    "question": "Which sleep outcomes improved significantly within the intervention group after sleep restriction therapy?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Significant improvements occurred in overall sleep quality, subjective sleep quality, sleep latency, sleep adequacy, and sleep disturbances.",
+    "answer_span": "In intervention group, paired t-test showed a significant difference between pre-test and post-test in sleep quality, subjective sleep quality, sleep latency, sleep adequacy, and sleep disturbances (P = 0.001, P = 0.001, P = 0.031, P = 0.001, P = 0.004, respectively)."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q13",
+    "question": "Which measured outcomes did not change significantly within the sleep restriction group?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Sleeping medication use, daytime dysfunction, and total sleep time did not show statistically significant changes.",
+    "answer_span": "Amount of sleeping medication, daytime dysfunction, and total sleep time showed no significant differences (P = 0.205, P = 0.999, P = 0.187, respectively)"
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q14",
+    "question": "How did sleep restriction therapy affect sleep latency in the experimental group?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The sleep latency score decreased from 2.84 before treatment to 2.47 afterward, and the change was statistically significant.",
+    "answer_span": "Sleep latency Pre-test 2.84 0.374 2.34 0.031\nPost test 2.47 0.611"
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q15",
+    "question": "What happened to daytime dysfunction after the intervention, and how did the authors explain why improvement might not have occurred?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Daytime dysfunction did not improve significantly, and the authors noted that early sleep restriction can itself cause tiredness and daytime drowsiness because bedtime is delayed.",
+    "answer_span": "There was no significant difference in daytime dysfunction. Daytime dysfunction can occur as a result of tiredness and daytime drowsiness in the first weeks of treatment with sleep restriction due to the delayed time of going to bed."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q16",
+    "question": "What explanation did the authors propose for the lack of a significant reduction in sleeping medication use?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They suggested that the study's follow-up period may have been too short for a reduction in sleeping medication use to become evident.",
+    "answer_span": "As mentioned in the present study, consumption of sleeping medications was not significantly changed by application of sleep restriction possibly due to the short time of follow up in the present study."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q17",
+    "question": "How did the study's findings on sleep quality, sleep adequacy, and sleep latency compare with earlier research on sleep restriction in older adults?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The results were consistent with earlier research reporting that sleep restriction improved sleep quality, adequacy, and latency in older adults.",
+    "answer_span": "The findings of the present study are consistent with those of Riedel and Lichstein in investigation of sleep restriction treatment strategies efficiency in the elderly reporting sleep restriction to promote sleep quality, adequacy, and latency (P < 0.01)."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q18",
+    "question": "What study limitation restricts applying these findings to older adults living in nursing homes?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Because the research was conducted in daytime centers, the results may not generalize to elderly people residing in nursing homes.",
+    "answer_span": "Research restrictions included conducting the study in daytime canters which restricted the generalization of the results to nursing homes."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q19",
+    "question": "What type of future study did the researchers recommend to strengthen investigation of sleep restriction therapy in older adults?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They recommended a longitudinal study with repeated measurements in elderly hospitalization centers and suggested including people older than 65 in future research.",
+    "answer_span": "It is recommended to conduct the present study in a longitude design together with sequential frequent measurements in hospitalization canters of the elderly. For future research it is suggested to include over 65-years-old people in investigations."
+  },
+
+  {
+    "paper_id": 21665,
+    "question_id": "21665-Q20",
+    "question": "What overall clinical conclusion did the researchers draw about using sleep restriction therapy for older adults with poor sleep?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "They concluded that sleep restriction can significantly improve sleep quality and may provide a useful noninvasive alternative to relying primarily on sleeping medications in older adults.",
+    "answer_span": "The results of the present study showed that sleep restriction therapy can significantly promote sleep quality in the elderly. Since low quality of sleep in the elderly is among their common problems, and the most ordinary therapeutic solution is taking sleeping medications, non-invasive interventions such as sleep restriction therapy and other cognitive behavior therapies, administrated by nurses, can make a positive background for promotion of the elderly quality of life and sleep, and their active attendance in the community."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q01",
+    "question": "How did the researchers define psychological distress in this study of first-time mothers?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Psychological distress was defined as the presence of depression, anxiety, and insomnia.",
+    "answer_span": "Psychological distress, defined as depression, anxiety, and insomnia in this study, often increases during the postpartum period"
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q03",
+    "question": "Why did the authors believe an alternative such as cranial electrotherapy stimulation was worth exploring for postpartum psychological distress?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Existing pharmaceutical and psychotherapy treatments can be limited by cost, time requirements, and lack of effectiveness for some women, creating a need to investigate complementary approaches.",
+    "answer_span": "Current treatment recommendations for depression, anxiety, and insomnia are primarily pharmaceutical or psychotherapy, both of which have limitations related to cost, time involved, and ineffectiveness for some women. Consequently, there is a need to examine other treatment approaches including complementary modalities, such as cranial electrotherapy stimulation (CES)"
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q04",
+    "question": "What type of research design was used to examine psychological distress in the postpartum mothers?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The researchers used an exploratory, cross-sectional design.",
+    "answer_span": "An exploratory, cross-sectional design was used to investigate the study aims."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q05",
+    "question": "How did the researchers determine that a sample of 33 mothers was appropriate for this exploratory study?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Because effect sizes were unavailable, the researchers applied Browne's rule and selected a target of 30 participants plus 10% to account for attrition, resulting in a sample size of 33.",
+    "answer_span": "Effect sizes were not available to determine sample size. Because this study was designed to explore possible associations between depression, anxiety, and insomnia in first-time mothers, test the feasibility, suitability, and acceptability of study methods and procedures, for use in this population, and identify new mothers’ interest in using CES for psychological distress, a sample size of 33 (30 plus 10% for attrition) was determined to be acceptable using Browne’s rule [67]."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q07",
+    "question": "How many women were assessed for eligibility, and how many ultimately enrolled in the study?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Forty-two women were assessed for eligibility, and 33 were ultimately enrolled.",
+    "answer_span": "Of the 42 women assessed for eligibility, nine (21%) were excluded, three (7%) were under 18 years of age, three (7%) had ongoing infant complications that required the infant’s admission to the NICU, and three (7%) were lost to follow-up. Some individuals had multiple exclusion criteria. There were 33 participants enrolled in this study."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q08",
+    "question": "Which standardized instruments were used to measure depression, anxiety, and insomnia?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The HAM-D17 measured depression, the HAM-A14 measured anxiety, and the PSQI19 measured insomnia.",
+    "answer_span": "Three standardized clinical scales, each measured depression, anxiety, and insomnia, were selected because they are commonly used in mental health practice to evaluate the presence of depression (HAM-D17), anxiety (HAM-A14), and insomnia (PSQI19)."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q09",
+    "question": "How was participants' interest in using cranial electrotherapy stimulation assessed?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "After an inactive Alpha-Stim AID was demonstrated, participants were interviewed about its perceived usefulness, with responses assessed using a semistructured interview guide containing a five-point Likert-type scale and open-ended questions.",
+    "answer_span": "A semistructured interview guide was developed for this study to elicit participants’ responses about the acceptability of Alpha-Stim AID CES therapy as an intervention for reducing depression, anxiety, and insomnia. Items for this measure were anchored on a five-point Likert-type scale ranging from 1 (never true) to 5 (very often true)."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q10",
+    "question": "What did the clinical measures reveal about the occurrence of depression, anxiety, and insomnia among the participants?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "All 33 participants had scores indicating depression and anxiety, and 25 participants, or 75.8%, scored in the moderate range for insomnia.",
+    "answer_span": "Findings from the HAM-D17, HAM-A14, and PSQI19 revealed that all participants (𝑁 = 33) displayed scores indicative of depression and anxiety, while 25 (75.8%) of the participants scored in the moderate range for insomnia."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q11",
+    "question": "What relationships were found between perceived stress scores and measures of depression, anxiety, and insomnia?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Both the four-item and ten-item Perceived Stress Scales were significantly and moderately correlated with depression, anxiety, and insomnia.",
+    "answer_span": "A comparison of participants’ scores from the PSS4 (M = 5.36; SD = 2.1) and PSS10 (M = 17.39; SD = 5.9) with their scores from the HAM-D17, HAM-A14, and PSQI19 revealed that the PSS4 and PSS10 were both significantly moderately correlated with depression, anxiety, and insomnia in this study"
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q12",
+    "question": "How strongly were depression and anxiety associated with one another in the study?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Depression and anxiety had a statistically significant positive Pearson correlation of 0.60.",
+    "answer_span": "(1) HAM-D17 1 0.60∗∗ 0.54∗∗ 0.60∗∗ 0.57∗∗\n(2) HAM-A14 — 1 0.28 0.46∗∗ 0.57∗∗\n(3) PSQI19 —— 1 0.41∗ 0.51∗∗\n(4) PSS4 ——— 1 0.51∗∗\n(5) PSS10 ———— 1\nNote. ∗𝑝 < 0.05; ∗∗𝑝 < 0.01."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q13",
+    "question": "How interested were the mothers in using CES as a possible treatment for psychological distress?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Interest was very high, with participants receiving an overall score of 4.9 on a five-point scale.",
+    "answer_span": "The total score from the semi structured interview guide on new mothers’ interest in using CES for psychological distress was 4.9 on the five-point Likert-type scale ranging from 1 (never true) to 5 (very often true)."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q14",
+    "question": "Why did the authors conclude that the PSS4 was not an effective screening tool for psychological distress in this sample?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "A cutoff of 8 on the PSS4 would have excluded most mothers whose other clinical scales indicated depression and anxiety and all of those identified as having insomnia symptoms.",
+    "answer_span": "Requiring this score on the PSS4 would have eliminated 29 of the 33 participants in the study whose scores on the HAM-D17 and HAM-A14 indicated depression and anxiety, respectively. This cut-off score would have also eliminated all 21 participants whose scores on the PSQI19 indicated insomnia symptoms. Thus, in this study, the PSS4 did not function well as a screening instrument for psychological distress (depression, anxiety, and insomnia)."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q15",
+    "question": "What discrepancy did the researchers observe between PSS10 scores and the clinical measures of depression and anxiety?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Twenty of the 33 women had PSS10 scores suggesting no or minimal stress, even though all participants had scores indicating mild or moderate depression and anxiety on the clinical scales.",
+    "answer_span": "Using a cutoff score of 20 for psychological distress, very reasonable and possibly too low, 20 out of 33 participants in this study scored below 20 on the PSS10 (no or minimal stress), but all scored in the mild or moderate range for depression and anxiety on the HAM-D14 and HAM-A17, respectively."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q16",
+    "question": "What explanation did the authors propose for the disagreement between the Perceived Stress Scales and the clinical measures of psychological distress?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They suggested that the PSS4 and PSS10 may assess dimensions of stress that differ from the depression, anxiety, and insomnia constructs measured by the clinical instruments.",
+    "answer_span": "One explanation for this observation is that the PSS4 and PSS10 measure different dimensions of stress than the HAM-D17, HAM-A14, and PSQI19."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q17",
+    "question": "Why should the high occurrence of psychological distress observed in this sample be interpreted cautiously?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Self-selection may have influenced the results because mothers experiencing psychological distress may have been more motivated to enroll in the study.",
+    "answer_span": "One potential explanation for the high occurrence of depression, anxiety, and insomnia relates to the issue of self-selection into the study. For example, mothers who enrolled in this study were interested in joining the study because of the psychological distress they were experiencing."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q18",
+    "question": "What limitation prevents this study from determining whether CES actually reduces postpartum depression, anxiety, or insomnia?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The mothers did not actually receive CES treatment; the study only measured their interest in potentially using it.",
+    "answer_span": "An additional limitation is that new mothers did not use CES in this study; they indicated an interest in using CES."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q19",
+    "question": "What methodological weaknesses did the authors identify as reasons that future studies should use a stronger design?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The exploratory study was limited by its cross-sectional design and small sample, so the authors recommended larger studies using more rigorous research designs.",
+    "answer_span": "The main limitations of this exploratory study include the cross-sectional design and small sample size."
+  },
+
+  {
+    "paper_id": 24216,
+    "question_id": "24216-Q20",
+    "question": "What broader clinical implication did the researchers draw from their findings about psychological distress in first-time postpartum mothers?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The findings support greater mental health screening and suggest that maternal psychological distress should be considered as an interconnected cluster rather than treating stress, depression, anxiety, and insomnia as isolated problems.",
+    "answer_span": "Importantly, the findings highlight a need for mental health screening and a broader approach to thinking about maternal stress and psychological distress in this population."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q01",
+    "question": "How has the understanding of the relationship between insomnia and depression changed over time?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Insomnia was traditionally viewed mainly as a symptom of psychiatric disorders such as depression, but it is now considered an independent disorder that can occur before depression and may coexist with it.",
+    "answer_span": "Insomnia has been traditionally viewed in the field of psychiatry as a symptom of psychopathology, especially depression (overview see [11, 12]). More recently, insomnia has been re-considered as a primary disorder if it is present without the co-existence of other clinically relevant psychiatric or medical diseases, and as a secondary disorder if otherwise. Considering the link to depression, however, chronic insomnia can also exist years before the first onset of a depressive episode."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q02",
+    "question": "What two mechanisms are proposed as possible explanations for the close relationship between insomnia and depression?",
+    "question_type": "background",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The authors propose heightened arousal and altered emotionality as possible mechanisms linking insomnia with depression.",
+    "answer_span": "The psychobiological mechanisms that underline the relationship between depression and insomnia are still not well understood. Neurobiological and sleep EEG studies indicate that high levels of arousal could explain the close link between the two conditions and represent a possible mediating factor. Another possible mechanism involved is altered emotionality."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q03",
+    "question": "How might changes in emotional responses help explain why insomnia can increase the risk of depression?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Insomnia may increase negative emotionality and reduce positive emotionality, suggesting that persistent sleep problems can disrupt emotional processing and thereby contribute to the development of depression.",
+    "answer_span": "Based on these results, it can be assumed that heightened negative emotionality and diminished positive emotionality explain the psychological mechanism which mediates the relationship between insomnia and depression [18]. That is, insomnia may lead to depression by altering emotional responses."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q04",
+    "question": "What proportion of patients with depression experience sleep complaints consistent with insomnia?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Up to 80% of patients with depression have sleep complaints consistent with insomnia.",
+    "answer_span": "The link between depression and insomnia is very close; up to 80% patients with depression have sleep complaints consistent with insomnia [8]."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q05",
+    "question": "What criteria did longitudinal studies have to meet to be included in the authors' meta-analysis?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Studies had to examine insomnia as a predictor of later depression, use insomnia and depression definitions consistent with DSM-IV or standardized measures, exclude participants with significant baseline depression, have at least 12 months of follow-up, and provide a usable effect size.",
+    "answer_span": "25 studies were excluded as they did not satisfy the following criteria: 1) insomnia predicting follow-up depression and not the other way round; 2) definition of sleep complaints consistent with the DSM-IV definition of insomnia; 3) depression assessed basing on the DSM-IV definition or through standardized questionnaires; 4) participants with significant depression at baseline excluded from the study; 5) follow-up conducted at least after 12-months from the baseline; 6) effect size reported and/or computable."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q06",
+    "question": "How many studies were ultimately included in the meta-analysis, and what was their average follow-up sample size?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "The meta-analysis included 21 studies, with an average follow-up sample size of 3,200 participants.",
+    "answer_span": "The 21 studies selected for meta-analytic computations had a mean sample size at follow-up of 3200 participants with a mean age of 46 years (sd=22.4)."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q07",
+    "question": "How did the incidence of depression differ between people with insomnia symptoms and those without sleep difficulties?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "Depression developed in 13.1% of people with insomnia symptoms compared with 4.0% of those without sleep difficulties.",
+    "answer_span": "Incidence of depression at follow-up in people with insomniac symptoms was in percentage 13.1%, while it was 4.0% in people without sleep difficulties."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q08",
+    "question": "What overall risk of developing depression was associated with insomnia in the meta-analysis?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "easy",
+    "answer": "People with insomnia had approximately twice the risk of developing depression compared with people without insomnia-related sleep difficulties.",
+    "answer_span": "Results from this meta-analytic study show that people with insomnia have a two-fold risk to develop depression, compared to people with no insomniac sleep difficulties."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q09",
+    "question": "What happened to the heterogeneity among studies after the identified outliers were removed from the meta-analysis?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "The initially significant heterogeneity was no longer significant after the outlier studies were excluded, and the I-squared value decreased from 84.0 to 20.3.",
+    "answer_span": "Considering all the 21 studies selected together, the heterogeneity index was statistically significant (Q-value = 124.7; df(Q) = 20; p<0.001; and I2=84.0). By performing sensitivity analysis, it was found that the majority of heterogeneity between studies was explained by those studies which reported standardized residuals of >+3 or <−3[21, 26, 32, 37]. Excluding these outliers from the analysis, the heterogeneity test was not longer significant (Q-value = 20.1; df(Q) = 16; p=0.2; and I2=20.3)."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q10",
+    "question": "Did the increased risk of depression associated with insomnia differ substantially across age groups?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "No major difference was observed: the summarized odds ratios were 2.1 for working-age adults, 1.9 for older adults, and 2.0 for children and adolescents.",
+    "answer_span": "The summarizing odds ratios for these three age-groups were respectively: 2.1 (CI: 1.7–2.6) for the working-age group; 1.9 (CI: 1.6–2.3) for the elderly group; and 2.0 (CI: 1.5–2.7) for the children and adolescents group."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q11",
+    "question": "What important limitation did the authors identify in how insomnia was defined across the studies in the meta-analysis?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Many studies did not incorporate the duration and daytime impairment requirements of the full insomnia definition, and eight studies identified insomnia solely from problems initiating or maintaining sleep.",
+    "answer_span": "However, the studies included in the meta-analysis often failed to consider the duration and the daytime impairment criteria. More specifically, eight of the 21 studies based their diagnosis only on the presence of problems in initiating and maintaining sleep, thus considering only insomnia symptoms, but not insomnia as a disorder."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q12",
+    "question": "Why do the authors suggest that the observed relationship with depression may underestimate the impact of insomnia disorder itself?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Because several studies measured only insomnia symptoms rather than the complete disorder, the effect of clinically defined insomnia on subsequent depression could be even stronger.",
+    "answer_span": "It could be possible that insomnia as a disorder has an even higher impact on the development/incidence of depression than sleep difficulties alone."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q13",
+    "question": "How did adding cognitive-behavioral therapy for insomnia affect treatment in patients who had both insomnia and depression?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Adding CBT-I produced better treatment outcomes than standard antidepressant treatment alone in patients experiencing both conditions.",
+    "answer_span": "Some recent studies showed that adding cognitive-behaviour therapy for insomnia (CBT-I) is efficacious in patients with both symptoms of insomnia and depression and guarantees a better treatment outcome in this population than standard antidepressive treatment alone [45, 46]."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q14",
+    "question": "What did the two studies of the Pennebaker writing intervention find about sleep-related outcomes?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "One study found shorter sleep-onset latency after the writing intervention, while another found reduced presleep arousal but no improvement in sleep-onset latency.",
+    "answer_span": "Harvey and Farrel [48] found in 44 poor sleepers that those who underwent a 3-nights Pennebaker writing intervention reported shorter sleep-onset latencies compared to a no-writing group. Mooney, Espie and Broomfield [47] found that a Pennebaker writing group reported significantly reduced pre-sleep arousal compared to a control group. However, they did not find an effect of the intervention on sleep-onset latencies."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q15",
+    "question": "Why do the authors favor expanding access to CBT-I rather than relying on long-term hypnotic medication for insomnia?",
+    "question_type": "comparison",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Hypnotic drugs are recommended only for short periods because of tolerance and dependence risks, whereas CBT-I has demonstrated both short- and long-term effectiveness but remains inaccessible to many patients.",
+    "answer_span": "However, with respect to hypnotic drugs, guidelines suggest to restrict prescriptions to limited periods of times, i.e. 3 to 4 weeks due to the risks inherent in these drugs, mainly tolerance and dependence. On the other hand, CBT-I has been found to be efficacious both at short- and long-term, but is available only to a tiny minority of afflicted individuals, as it is still mainly limited to academic environments and often used only in research contexts."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q16",
+    "question": "How is the stepped-care model intended to make insomnia treatment available to a broader population?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "It begins with low-intensity interventions that can reach many people and moves individuals who do not improve to progressively more specialized treatment, ultimately including psychologist-delivered CBT-I.",
+    "answer_span": "This model offers a generic approach to care management by delivering low intensity treatments to a wide number of individuals. In case of treatment failure, individuals can step forward to next levels that are characterized by more specialized programs and deliverers. The first level would work as prevention program for individuals at risk, while the superior levels would correspond to CBT-I delivered by a psychologist."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q17",
+    "question": "What components were included in the structured CBT-I program that trained nurses delivered in primary care?",
+    "question_type": "methods",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "The five-session program covered sleep information, sleep hygiene and relaxation, sleep scheduling, cognitive approaches, and development of a strong and natural sleep pattern.",
+    "answer_span": "CBT-I was organized in a structured protocol divided in five sessions comprising: (a) sleep information; (b) sleep hygiene and relaxation; (c) sleep scheduling; (d) cognitive approaches; (e) developing a strong and natural sleep pattern."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q18",
+    "question": "What sleep outcomes improved in studies that delivered CBT-I through the internet?",
+    "question_type": "finding",
+    "answer_type": "text",
+    "difficulty": "medium",
+    "answer": "Internet-delivered CBT-I improved total sleep time, sleep-onset latency, nocturnal awakenings, nighttime wakefulness, sleep efficiency, sleep quality, and insomnia severity.",
+    "answer_span": "These studies indicate a significant improvement in the treatment groups in total sleep time, sleep onset latency, nocturnal awakenings, time awake at night, sleep efficiency, sleep quality and insomnia severity."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q19",
+    "question": "Why do the authors argue that addressing insomnia early in childhood or adolescence could have preventive mental health benefits later in life?",
+    "question_type": "relationship",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "Because insomnia may predict not only depression but psychopathology more broadly, preventing or treating sleep problems early could potentially reduce the development of psychiatric disorders in adulthood.",
+    "answer_span": "In fact, according to the transdiagnostic model of insomnia (e.g. [56]), insomnia is not only a clinical predictor for depression, but for psychopathology in general. It could be possible that the treatment of insomnia is a generally effective preventive strategy for mental health. This effect could be even stronger in children and adolescents because the future development of psychiatric disorders in adult age might be prevented."
+  },
+
+  {
+    "paper_id": 25475,
+    "question_id": "25475-Q20",
+    "question": "What overall clinical strategy do the authors recommend based on the evidence linking insomnia with later depression?",
+    "question_type": "conclusion",
+    "answer_type": "text",
+    "difficulty": "hard",
+    "answer": "They recommend integrating sleep-focused treatment into depression care, adding emotional-regulation approaches to insomnia treatment, expanding access to insomnia therapy through stepped care and internet programs, and providing sleep education early in life.",
+    "answer_span": "Modifications of existing clinical treatment modules are needed in order to add sleep protocols to the treatment of depression and protocols for affective regulation to the treatment of insomnia. Moreover, there is a need to enhance the accessibility for the treatment of insomnia in the general population, either through the “stepped care” approach or through internet programs. Finally, sleep education protocols in early periods of life could lead to significant benefits for the individual and improve public health outcomes."
+  }
+]

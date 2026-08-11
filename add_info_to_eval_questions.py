@@ -2,7 +2,7 @@ import json
 from datasets import load_from_disk
 import re
 
-paper_ids = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475, 899, 1625]
+paper_ids = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475]
 custom_corpus = load_from_disk("custom_corpus")
 documents = []
 for paper in custom_corpus:

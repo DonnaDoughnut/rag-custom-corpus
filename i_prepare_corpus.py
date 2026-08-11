@@ -1,23 +1,7 @@
+"""Creates a dataset of 8 sleep papers and 2 exercise papers without any duplicated sentences."""
+
 from datasets import load_dataset
 import re
-
-# ============================================================
-# ---------------- 1. DATASET LOADING ---------------
-# Loads the train split of the `pubmed` subset of the
-# `armanc/scientific_papers` dataset from Hugging Face.
-#
-# Note:
-# - `datasets` version 3.6.0 is required.
-# - The dataset contains two subsets: `arxiv` and `pubmed`.
-# - `arxiv` contains approximately 205,000 papers in
-#   mathematics, physics, and computer science.
-# - `pubmed` contains approximately 130,000 papers in
-#   biomedical research.
-# - For the purpose of this project, any of the three splits
-#   {train, validation, test} can be used because they share 
-#   the same data structure and fields:
-#   {abstract, article, section_names}
-# ============================================================
 
 dataset = load_dataset(
     "armanc/scientific_papers",
@@ -26,40 +10,7 @@ dataset = load_dataset(
     trust_remote_code=True
 )
 
-
-# ============================================================
-# -------- 2. CUSTOM CORPUS SELECTION: HELPING FUNCTION --------
-# Searches for papers using groups of related terms.
-# 
-# The first term group contains the primary search terms. The
-# total number of matches from this group must be at least
-# `min_occurrences`.
-# 
-# Any remaining groups contain supporting terms. At least one
-# term from each supporting group must appear in the selected
-# search field.
-#
-# Parameters:
-#   dataset: 
-#       The dataset to search.
-
-#   term_groups: 
-#       A list of term groups. The first group contains the
-#       primary terms, while the remaining groups contain supporting terms.
-
-#   search_field: 
-#       The dataset field to search, such as "abstract".
-#
-#   min_occurrences: 
-#       The minimum total number of matches required for the 
-#       primary term group.
-#
-# Returns:
-#   A list of indices for papers that satisfy the search conditions.
-# ============================================================
-
-def search_papers_by_terms(
-        dataset, term_groups, search_field, min_occurrences):
+def search_papers_by_terms(dataset, term_groups, search_field, min_occurrences):
     
     if not term_groups or not term_groups[0]:
         raise ValueError("Error: At least one primary term group is required.")
@@ -88,22 +39,7 @@ def search_papers_by_terms(
     
     return matching_indices
 
-
-# ============================================================
-# -------- 3. CUSTOM CORPUS SELECTION: PAPER REVIEW --------
-# Searches the dataset using custom-defined keywords and a 
-# `minimum_occurrences` threshold.
-#
-# The first 20 matching paper indices are displayed for initial
-# inspection. The indices can then be copied into the code below
-# to print and manually review each abstract. Based on the 
-# content of the abstract, we determine whether the paper should
-# be included in the custom corpus.
-# ============================================================
-
-# ------------------------------------------------------------
-# 1. Modifies the keywords and minimum occurrence threshold as needed.
-# ------------------------------------------------------------
+# keywords = [["sleep disorder", "sleep quality", "insomnia"]]
 keywords = [
     [
         "physical exercise",
@@ -118,29 +54,36 @@ matching_indices = search_papers_by_terms(dataset, keywords, "abstract", 3)
 print(f"Number of matching papers: {len(matching_indices)}")
 print(f"Matching indices: {matching_indices[:20]}")
 
-# ------------------------------------------------------------
-# 2. Copies a paper index from the search results and use the 
-#    code below to print its abstract.
-#
-#    Uncomment the print statement and replace the example
-#    index as needed.
-#
-#    For our convenience, we can paste the matching indices here
-#    below and delete the one that has passed:
-#    Matching indices: <paste here>
-# ------------------------------------------------------------
-
-# print(dataset[1822]["abstract"][0:5000])
 
 
-# ============================================================
-# ---------- 4. SAVES CUSTOM CORPUS AS DATASET ----------
-# Saves the 10 selected papers as a Hugging Face Dataset 
-# for use in the RAG pipeline.
-# ============================================================
+sleep_indices = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475]
 
-selected_indices = [503, 942, 1395, 3325, 3823, 4060, 4070, 4911, 1625, 1822]
+for index in sleep_indices:
+    print(f"\nINDEX: {index}")
+    print(dataset[index]["abstract"])
 
-custom_corpus = dataset.select(selected_indices)
+from ii_chunking_util import fixed_size_sentence
+from collections import Counter
+
+for i in matching_indices[0:20]:
+  # Chunking by single sentences returns a list of sentences
+  sentences = fixed_size_sentence(dataset[i]["article"])
+  counts = Counter(sentences)
+  duplicate_sentences = sum(count - 1 for count in counts.values() if count > 1)
+  if duplicate_sentences > 0:
+      print(f"Index {i} has {duplicate_sentences} duplicate sentences out of {len(sentences)} sentences. This means {100 * duplicate_sentences / len(sentences):.1f}% duplicates. An example duplicate sentence:")
+      for s in counts.keys():
+          if counts.get(s) > 1:
+              print(s)
+              break
+      print()
+  else:
+      print(f"Index {i} has {duplicate_sentences} duplicate sentences.")
+
+# Selected manually from the above output, picking out those with 0 duplicates and if it shows all the duplicates for a paper were false positives
+sleep_indices = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475]
+exercise_indices = [899, 1625]
+
+custom_corpus = dataset.select(sleep_indices + exercise_indices)
 
 custom_corpus.save_to_disk("custom_corpus")

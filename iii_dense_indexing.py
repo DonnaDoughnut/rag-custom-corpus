@@ -15,10 +15,7 @@ import torch
 from transformers import AutoTokenizer, AutoModel
 
 #1. Load the models
-key = open("openai_key.txt", "r").readline().strip()
-openai_client = OpenAI(
-            api_key=key
-        )
+openai_client = OpenAI()
 bge_model = SentenceTransformer("BAAI/bge-large-en-v1.5")
 biobert_model = SentenceTransformer("pritamdeka/S-BioBert-snli-multinli-stsb")
 medCPTtokenizer = AutoTokenizer.from_pretrained("ncbi/MedCPT-Article-Encoder")

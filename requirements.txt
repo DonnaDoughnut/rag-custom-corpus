@@ -8,3 +8,4 @@ sentence-transformers     # Used by ii_chunking.py
 openai                    # Used by iii_dense_indexing.py
 rank-bm25                 # Used by iii_bm25_indexing.py
 # An OpenAI key in a file called openai_key.txt
+dict
