@@ -123,8 +123,8 @@ if __name__ == "__main__":
 
     for result in results:
         print("=" * 60)
-        print("New rank: ", result["rank"])
         print("Old rank: ", result["retrieval_rank"])
+        print("New rank: ", result["rank"])
         print("Cross-encoder score: ", result["cross_encoder_score"])
         print("Text: ", result["text"])
     
