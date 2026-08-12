@@ -54,40 +54,40 @@ if __name__ == "__main__":
       avg_recall = recall_sum/len(evaluation_questions)
       print("Chunking method:", method, "Recall@" + str(k) + " =", avg_recall)
 
-    print("Dense Retrieval:")
+  print("Dense Retrieval:")
     
-    for chunking_method in chunking_methods:
-      for embedding_model in ["OpenAI", "BioBERT", "BGE", "MedCPT"]:
-        # Loads the selected embedding model once and reuses it for all queries.
-        model_resources = load_embedding_model(embedding_model=embedding_model)
+  for chunking_method in chunking_methods:
+    for embedding_model in ["OpenAI", "BioBERT", "BGE", "MedCPT"]:
+      # Loads the selected embedding model once and reuses it for all queries.
+      model_resources = load_embedding_model(embedding_model=embedding_model)
         
-        # Calculating the average recall over all questions
-        recall_sums = {5: 0, 10: 0, 50: 0}
+      # Calculating the average recall over all questions
+      recall_sums = {5: 0, 10: 0, 50: 0}
 
-        for question_record in evaluation_questions:
-          correct_locations = question_record["answer_indices"]
-          query = question_record["question"]
-          results_50 = dense_retrieve(
-                                    query=query,
-                                    embedding_model=embedding_model,
-                                    chunking_method=chunking_method,
-                                    model_resources=model_resources,
-                                    top_k=50
-                                  )
+      for question_record in evaluation_questions:
+        correct_locations = question_record["answer_indices"]
+        query = question_record["question"]
+        results_50 = dense_retrieve(
+          query=query,
+          embedding_model=embedding_model,
+          chunking_method=chunking_method,
+          model_resources=model_resources,
+          top_k=50
+        )
           
-          for k in 5, 10, 50:
-            results = results_50[:k]
-            num_found = 0
-            for answer_start, answer_end in correct_locations:
-              found = False
-              for chunk in results:
-                if chunk["start"] < answer_end and chunk["end"] > answer_start:
-                  found = True
-                  break
-              if found:
-                num_found += 1
-            recall = num_found / len(correct_locations)
-            recall_sums[k] += recall
         for k in 5, 10, 50:
-          avg_recall = recall_sums[k] / len(evaluation_questions)
-          print("Chunking method:", chunking_method, "- Embedding model:", embedding_model, "- Recall@" + str(k) + " =", avg_recall)
+          results = results_50[:k]
+          num_found = 0
+          for answer_start, answer_end in correct_locations:
+            found = False
+            for chunk in results:
+              if chunk["start"] < answer_end and chunk["end"] > answer_start:
+                found = True
+                break
+            if found:
+              num_found += 1
+          recall = num_found / len(correct_locations)
+          recall_sums[k] += recall
+      for k in 5, 10, 50:
+        avg_recall = recall_sums[k] / len(evaluation_questions)
+        print("Chunking method:", chunking_method, "- Embedding model:", embedding_model, "- Recall@" + str(k) + " =", avg_recall)

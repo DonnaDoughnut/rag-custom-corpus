@@ -21,26 +21,6 @@
   },
   {
     "paper_id": 2146,
-    "question_id": "2146-Q03",
-    "question": "What were the two primary goals of the study?",
-    "question_type": "background",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The researchers wanted to describe MFIS scores in sleep-laboratory patients and identify polysomnographic factors that predict fatigue on the MFIS and FSS.",
-    "answer_span": "the aims of this study were : to describe the mfis values in patients admitted to a sleep laboratory and to investigate which polysomnographic parameters can predict fatigue measured with the mfis and the fss ."
-  },
-  {
-    "paper_id": 2146,
-    "question_id": "2146-Q04",
-    "question": "What study design and sampling approach were used?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The researchers conducted a retrospective observational study of consecutive patients admitted to one sleep laboratory over a one-year period.",
-    "answer_span": "in this retrospective observational study , all consecutive patients who were admitted to the sleep laboratory of the hanse - klinikum , stralsund , germany between february 1 , 2011 and january 31 , 2012 were included ."
-  },
-  {
-    "paper_id": 2146,
     "question_id": "2146-Q05",
     "question": "Which polysomnographic variables were evaluated as possible predictors of fatigue?",
     "question_type": "methods",
@@ -48,16 +28,6 @@
     "difficulty": "hard",
     "answer": "The study examined apnea-hypopnea index, minimum oxygen saturation, sleep efficiency, deep sleep, awakenings, arousal index, and sleep latency.",
     "answer_span": "the following polysomnographic parameters were included in the analysis : apnea / hypopnea index ( ahi ) per hour of sleep , according to the american academy of sleep medicine;31 minimal desaturation ( spo2% min ) ; sleep efficacy ( ratio total sleep time / time spent in bed ) ; deep sleep ( ratio non - rapid eye movement sleep stage 3 and 4 [ nrem-3/4]/time spent in bed ) ; number of awakenings ; arousal index per hour of sleep ; and sleep latency ( time to first sleep epoch in minutes ) ."
-  },
-  {
-    "paper_id": 2146,
-    "question_id": "2146-Q06",
-    "question": "How many patients were included in the analysis, and what was the sex distribution?",
-    "question_type": "finding",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The study included 410 patients, consisting of 290 men and 120 women.",
-    "answer_span": "in sum , 410 patients 20 to 86 years ( 290 men and 120 women ) were investigated ."
   },
   {
     "paper_id": 2146,
@@ -232,16 +202,6 @@
   },
   {
     "paper_id": 10884,
-    "question_id": "10884-Q04",
-    "question": "What format did the patient survey use?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The survey included 14 multiple-choice questions and one open-ended free-text item.",
-    "answer_span": "we administered a brief survey , consisting of 14 multiple choice questions and one open - ended free text question , to patients seen in the sleep disorders clinic at our institution between 20092011"
-  },
-  {
-    "paper_id": 10884,
     "question_id": "10884-Q05",
     "question": "Which patients were eligible for the sleep-clinic survey?",
     "question_type": "methods",
@@ -382,16 +342,6 @@
   },
   {
     "paper_id": 10884,
-    "question_id": "10884-Q19",
-    "question": "What were the primary limitations of the survey?",
-    "question_type": "conclusion",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The study had a 28% response rate and drew patients from only one center.",
-    "answer_span": "the main limitations of this study include the 28% response rate and the single - center population ."
-  },
-  {
-    "paper_id": 10884,
     "question_id": "10884-Q20",
     "question": "What overall conclusion did the study reach about video visits in sleep medicine?",
     "question_type": "conclusion",
@@ -423,36 +373,6 @@
   },
   {
     "paper_id": 13995,
-    "question_id": "13995-Q03",
-    "question": "How many healthy volunteers participated, and how were they distributed by sex?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Thirteen volunteers participated: six women and seven men.",
-    "answer_span": "thirteen healthy volunteers ( 6 female , 7 male ; age range : 2350 years , mean  sd : 36.2  8.8 years ) participated ."
-  },
-  {
-    "paper_id": 13995,
-    "question_id": "13995-Q04",
-    "question": "What main characteristics were required for study inclusion?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Participants had to be 18–50 years old, euthyroid, medically healthy, and euthymic.",
-    "answer_span": "the inclusion criteria were 18 to 50 years of age , euthyroid status , absence of any signs of medical illness , euthymic mood"
-  },
-  {
-    "paper_id": 13995,
-    "question_id": "13995-Q05",
-    "question": "Which conditions or circumstances were grounds for exclusion?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Exclusions included thyroid, medical, or psychiatric disorders, substance abuse, pregnancy or lactation, and most medication or hormone use.",
-    "answer_span": "the exclusion criteria were : past or current thyroid , medical or psychiatric disorder ; substance abuse or dependency , pregnancy or lactation ; and use of any medication or hormones , apart from oral contraception"
-  },
-  {
-    "paper_id": 13995,
     "question_id": "13995-Q06",
     "question": "How was the levothyroxine treatment initiated?",
     "question_type": "methods",
@@ -470,16 +390,6 @@
     "difficulty": "medium",
     "answer": "TSH was measured weekly because suppression was expected at higher L-T4 doses.",
     "answer_span": "compliance with medication was monitored by weekly measurement of tsh ( thyroid stimulating hormone ; usually suppressed at a l - t4 dose of > 200  g / d ) ."
-  },
-  {
-    "paper_id": 13995,
-    "question_id": "13995-Q08",
-    "question": "What sleep testing was performed before treatment began?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Two consecutive nights of polysomnographic sleep recording were performed before treatment.",
-    "answer_span": "before initiation of t4 administration , two subsequent nights of sleep were recorded polysomnographically"
   },
   {
     "paper_id": 13995,
@@ -540,16 +450,6 @@
     "difficulty": "easy",
     "answer": "Total sleep time tended to decrease, with a median within-person difference of 38 minutes.",
     "answer_span": "tst tended to be shorter during l - t4 intake , the median of the individual differences was 38 minutes ."
-  },
-  {
-    "paper_id": 13995,
-    "question_id": "13995-Q15",
-    "question": "Was the change in sleep efficiency statistically significant?",
-    "question_type": "finding",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "No. Sleep efficiency tended to decrease slightly, but the average change was not statistically significant.",
-    "answer_span": "the sei tended to be slightly reduced during l - t4 intake . since two individuals showed a pronounced increase in their sei with medication while nine subjects showed the expected decrease , the differences on average were statistically not significant ."
   },
   {
     "paper_id": 13995,
@@ -614,36 +514,6 @@
   },
   {
     "paper_id": 17302,
-    "question_id": "17302-Q02",
-    "question": "What research design and sample size were used?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The researchers conducted a cross-sectional study of 400 hospitalized older adults.",
-    "answer_span": "a cross - sectional study was conducted on a sequential sample of 400 hospitalized older patients in the university hospitals in kashan , iran ."
-  },
-  {
-    "paper_id": 17302,
-    "question_id": "17302-Q03",
-    "question": "What requirements did a patient have to meet to enter the study?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Patients had to be at least 65 years old, able to communicate, and not have lived in an elderly hospice before the study.",
-    "answer_span": "the inclusion criteria were : age 65 or above , able to communicate either by speaking or writing and not being in an elderly hospice before the study ."
-  },
-  {
-    "paper_id": 17302,
-    "question_id": "17302-Q04",
-    "question": "Which conditions caused patients to be excluded?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Severe speech or hearing problems, a hospital stay shorter than seven days, and cognitive impairment were exclusion criteria.",
-    "answer_span": "exclusion criteria were : patients unable of answering questionnaires because of severe speech disorders ( aphasia , dysarthria ) or severe hearing loss ; length of stay ( los ) in hospital less than 7 days and patients suffering from cognitive impairment according to the short portable mental status questionnaire ( spmsq ) ."
-  },
-  {
-    "paper_id": 17302,
     "question_id": "17302-Q05",
     "question": "Which instrument was used to measure patients' sleep quality?",
     "question_type": "methods",
@@ -671,26 +541,6 @@
     "difficulty": "easy",
     "answer": "Cronbach's alpha was 0.82.",
     "answer_span": "reliability was calculated using the cronbach s alpha internal consistency coefficient (  = 0.82 ) ."
-  },
-  {
-    "paper_id": 17302,
-    "question_id": "17302-Q08",
-    "question": "What was the average age of the hospitalized patients?",
-    "question_type": "finding",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Their average age was 71.8 years.",
-    "answer_span": "four hundred hospitalized older patients with an average age of 71.8 ( 5.6 ) participated in this study ."
-  },
-  {
-    "paper_id": 17302,
-    "question_id": "17302-Q09",
-    "question": "How common was poor sleep quality among participants?",
-    "question_type": "finding",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Poor sleep quality was found in 55% of the sample.",
-    "answer_span": "the average of total score of sleep quality of the patients was 7.3 ( 4.8 ) and 220 subjects ( 55% ) had a poor sleep quality ."
   },
   {
     "paper_id": 17302,
@@ -731,16 +581,6 @@
     "difficulty": "hard",
     "answer": "Gender, literacy, ward type, previous hospitalization, and hospital hypnotic use remained in the model.",
     "answer_span": "the variables of gender ( or = 0.342 ) , literacy level ( or = 0.470 ) , type of ward ( or = 0.592 ) , previous hospitalization experience ( or = 2.336 ) , using hypnotic in hospital ( or = 3.633 ) stayed in the model that had a statistical relationship with the sleep quality"
-  },
-  {
-    "paper_id": 17302,
-    "question_id": "17302-Q14",
-    "question": "What sex difference in sleep quality was observed?",
-    "question_type": "comparison",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Men had a greater chance of good sleep quality than women.",
-    "answer_span": "we found that the chance of having a good sleep quality was more in men than women ."
   },
   {
     "paper_id": 17302,
@@ -812,26 +652,6 @@
     "difficulty": "easy",
     "answer": "The researchers wanted to determine how state anxiety and thermal conditions affect sleep quality and eye fatigue.",
     "answer_span": "hence , this study was done with the purpose of determining the effects of state anxiety and thermal conditions on sleep quality and eye fatigue in shift work nurses ."
-  },
-  {
-    "paper_id": 19577,
-    "question_id": "19577-Q02",
-    "question": "What type of research design was used and where was it conducted?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "It was a cross-sectional study of night-shift nurses working at Al-Zahra Hospital in Isfahan.",
-    "answer_span": "this cross - sectional research was done on the night shift nurses in isfahan al - zahra hospitalin 18 nursing work stations in 2012 ."
-  },
-  {
-    "paper_id": 19577,
-    "question_id": "19577-Q03",
-    "question": "What health and work-history requirements were used for inclusion?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Nurses needed at least one year of work history, no cardiovascular or respiratory disease, and no sedative use.",
-    "answer_span": "the inclusion criteria were having at least 1 year work history , lacking of cardio vascular diseases , respiratory diseases and not receiving any sedatives drug ."
   },
   {
     "paper_id": 19577,
@@ -1016,46 +836,6 @@
   },
   {
     "paper_id": 21665,
-    "question_id": "21665-Q02",
-    "question": "What was the study's second major objective?",
-    "question_type": "background",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "It was to evaluate relationships between dysfunctional sleep cognitions and mental disorders.",
-    "answer_span": "the second objective is to verify the relationships between the various dysfunctional cognitions and mental disorders ."
-  },
-  {
-    "paper_id": 21665,
-    "question_id": "21665-Q03",
-    "question": "Which larger survey supplied the data for this analysis?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "The data came from the Québec Survey on Seniors' Health conducted between 2005 and 2008.",
-    "answer_span": "data for this cross - sectional study were obtained from the longitudinal qubec survey on seniors health ( enqute sur la sant des ans [ esa ] ) conducted in 20052008.27"
-  },
-  {
-    "paper_id": 21665,
-    "question_id": "21665-Q04",
-    "question": "How many seniors were recruited for the study?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "A total of 2,759 participants were recruited.",
-    "answer_span": "a sampling strategy based on geographic location and the random generation of telephone numbers was used to recruit the participants ( n=2,759 ) in this study ."
-  },
-  {
-    "paper_id": 21665,
-    "question_id": "21665-Q05",
-    "question": "How were participant responses collected?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "easy",
-    "answer": "Health professionals conducted 90-minute interviews in participants' homes.",
-    "answer_span": "the responses obtained came from 90-minute - long interviews administered by health professionals at the participant s home ."
-  },
-  {
-    "paper_id": 21665,
     "question_id": "21665-Q06",
     "question": "What established instrument provided the basis for the sleep-cognition questions?",
     "question_type": "methods",
@@ -1237,16 +1017,6 @@
   },
   {
     "paper_id": 24216,
-    "question_id": "24216-Q04",
-    "question": "What eligibility characteristics were required of the original cohort?",
-    "question_type": "methods",
-    "answer_type": "text",
-    "difficulty": "medium",
-    "answer": "Participants had to be at least 65, ambulatory, community-dwelling, expected to stay in the area for three years, and able to provide consent.",
-    "answer_span": "participants had to be 65 years of age , ambulatory and community dwelling , expected to remain in their communities for 3 years , and able to provide personal informed consent"
-  },
-  {
-    "paper_id": 24216,
     "question_id": "24216-Q05",
     "question": "Which three symptoms were used as indicators of sleep-disordered breathing?",
     "question_type": "methods",
@@ -1405,7 +1175,6 @@
     "answer": "Observed apnea, bothersome snoring, and daytime sleepiness were associated with impaired glucose metabolism, insulin resistance, and later type 2 diabetes.",
     "answer_span": "in this population - based study of older adults , having observed apnea , bothersome snoring , and daytime sleepiness were associated with impaired glucose metabolism , insulin resistance , and risk of incident type 2 diabetes ."
   },
-
   {
     "paper_id": 25475,
     "question_id": "25475-Q01",
