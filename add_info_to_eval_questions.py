@@ -10,7 +10,7 @@ for paper in custom_corpus:
     normalize_whitespace = re.sub(r"\s+", " ", no_cite).strip()
     documents.append(normalize_whitespace)
 
-with open("evaluation_questions.txt", "r", encoding="utf-8") as file:
+with open("v_evaluation_questions.txt", "r", encoding="utf-8") as file:
   evaluation_questions = json.load(file)
 new_eval_json = []  # List of jsons
 for question in evaluation_questions:
@@ -19,6 +19,11 @@ for question in evaluation_questions:
   paper_text = documents[paper_ids.index(paper_id)]
   chunk_locs = []  # Lists of length 2 of start-end indices
   for chunk in answer_chunks:
+    chunk = re.sub(r'(?<=\D)\.(\d+)','.',chunk)
+    chunk = re.sub(r"\s+"," ",chunk).strip()
+    if not chunk:
+      continue
+    
     if chunk in paper_text:
       chunk_start = paper_text.index(chunk)
       chunk_end = chunk_start + len(chunk)

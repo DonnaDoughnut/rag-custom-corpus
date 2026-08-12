@@ -54,14 +54,6 @@ matching_indices = search_papers_by_terms(dataset, keywords, "abstract", 3)
 print(f"Number of matching papers: {len(matching_indices)}")
 print(f"Matching indices: {matching_indices[:20]}")
 
-
-
-sleep_indices = [2146, 10884, 13995, 17302, 19577, 21665, 24216, 25475]
-
-for index in sleep_indices:
-    print(f"\nINDEX: {index}")
-    print(dataset[index]["abstract"])
-
 from ii_chunking_util import fixed_size_sentence
 from collections import Counter
 

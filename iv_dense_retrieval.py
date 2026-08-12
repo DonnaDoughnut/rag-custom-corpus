@@ -381,7 +381,9 @@ def dense_retrieve(query, embedding_model, chunking_method, model_resources, top
             "document_id": chunk["document_id"],
             "paper_id": chunk["paper_id"],
             "chunk_id": chunk["chunk_id"],
-            "method": chunk["method"]
+            "method": chunk["method"],
+            "start": chunk["start"],
+            "end": chunk["end"]
         })
 
     return retrieval_results
@@ -400,7 +402,7 @@ if __name__ == "__main__":
     top_k = 5
 
     # Loads all evaluation questions from the JSON-formatted `evaluation_questions.txt`.
-    with open("evaluation_questions.txt", "r", encoding="utf-8") as file:
+    with open("eval_qs_with_indices.txt", "r", encoding="utf-8") as file:
         evaluation_questions = json.load(file)
 
     # Loads the selected embedding model once and reuses it for all queries.
