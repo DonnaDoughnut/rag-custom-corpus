@@ -33,6 +33,20 @@ Install the python packages listed in `requirements.txt`. These packages are req
 python -m pip install -r requirements.txt
 ```
 
+### Step 4. Set the OpenAI API key
+
+Since the OpenAI embedding model is used in the dense retrieval pipeline, an OpenAI API key must also be available before running the related scripts. The API key should be stored as an environmental variable rather than written directly in the code. For macOS or Linux, it can be set in the terminal using:
+
+```
+
+export OPENAI_API_KEY=<Add your open api key>
+
+```
+
+**IMPORTANT: THIS STEP CANNOT BE SKIPPED. For security reasons, the OpenAI API key is not included in the GitHub repository. Please refer to the Appendix of the final report for additional information on the API key setup.**
+
+
+
 ## How to Run
 
 After setting up the virtual environment and installing the required packages, the project can be run step by step to:
@@ -161,5 +175,5 @@ This final step uses the retrieved chunks as context for the LLM and generates t
 ```
 export OPENAI_API_KEY=<Add your open api key>
 
-python3 demo.py
+python demo.py
 ```
