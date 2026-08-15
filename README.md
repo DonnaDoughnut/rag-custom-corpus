@@ -33,8 +33,6 @@ Install the python packages listed in `requirements.txt`. These packages are req
 python -m pip install -r requirements.txt
 ```
 
-
-
 ## How to Run
 
 After setting up the virtual environment and installing the required packages, the project can be run step by step to:
@@ -156,3 +154,12 @@ python vi_llm.py
 ```
 
 This final step uses the retrieved chunks as context for the LLM and generates the final response to the query.
+
+## For demo, run below steps. This uses retrieval configuration that had the highest score in our evaluation.
+### The first-time loading does take 3-4 minutes,
+### then it starts an interactive session for user to ask questions over sleep disorder research.
+```
+export OPENAI_API_KEY=<Add your open api key>
+
+python3 demo.py
+```
